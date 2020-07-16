@@ -45,33 +45,10 @@ body {
     margin-left: auto;
   }
  
-
-  
-  
-  /*============= CAROUSEL =============*/
-  
-  
-  
-  /*---Change Carousel Transition Speed --*/
-  
-  
-  /*-- Carousel Content --*/
-  
-  
-  
-  /*===== FIXED BACKGROUND IMG =====*/
-  
-  
-  
-  /*-- Emoji Navbar --*/
-  
-  
-  
   /*============= FOOTER =============*/
   footer {
     position: relative;
     background-color: #E1A042; 
-    border-top: 1px solid black ;
   }
 
   footer p{
