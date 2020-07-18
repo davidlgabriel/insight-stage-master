@@ -28,10 +28,8 @@
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/slider.css') }}" rel="stylesheet">
     <link href="{{ asset('css/hamburgers.css') }}" rel="stylesheet">
-    <!--<link href="{{ asset('css/hamburgers.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/imagehover.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/hover-min.css') }}" rel="stylesheet">-->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 </head>
 <body>
@@ -70,11 +68,13 @@
     </div>
     
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<!-- Font Awesome -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
+    <script src="https://kit.fontawesome.com/a6273b012e.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{{ asset('js/scripts.js') }}"></script>
     
     <script>
         if ($('#app').height() < $(window).height()) {
@@ -95,37 +95,14 @@
         hamburger.addEventListener("click", function() {
             hamburger.classList.toggle("is-active");
         })
-        
-    </script>
-    
-   <script src="https://apps.elfsight.com/p/platform.js" defer>
-    /**
+          /**
      * https://www.youtube.com/watch?v=R_-oGJBg3nw
      * Cookies fazer;
      */
-</script>
-<div class="elfsight-app-1d42812a-2980-4810-a515-7418395e12b6"></div>
-    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
-    <script>
-        window.cookieconsent.initialise({
-            "palette": {
-                "popup": {
-                    "background": "#E1A042",
-                    "text": "#ffffff"
-                },
-                "button": {
-                    "background": "#ffffff",
-                    "text": "#E1A042"
-                }
-            },
-            "theme": "classic",
-            "position": "top",
-            "static": true,
-            "content": {
-                "dismiss": "OK"
-            }
-        });
     </script>
+    
+  
+
 
 </body>
 
