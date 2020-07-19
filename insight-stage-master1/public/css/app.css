@@ -5,6 +5,11 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: #616971;
   }
+  a:link
+{
+text-decoration:none;
+}
+  
   /*============= NAVIGATION =============*/
   .navbar-brand img{
       height: 3rem;
@@ -77,11 +82,9 @@ body {
   @media (max-width: 767.98px) {
   
   }
-  .slide{
-    height: 1000px;
-    width: 100%;
-    background-color: aqua;
-  }
+
+  
+ 
   
   /*============ BOOTSTRAP BREAK POINTS:
   
