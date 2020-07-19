@@ -85,6 +85,7 @@ a{
     code customized by Azmind.com
 */
 @media (min-width: 768px) and (max-width: 991px) {
+    
     /* Show 4th slide on md if col-md-4*/
     .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
         position: absolute;
@@ -95,7 +96,7 @@ a{
         visibility: visible;
     }
 }
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 767px) {
     /* Show 3rd slide on sm if col-sm-6*/
     .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
         position: absolute;
@@ -107,6 +108,10 @@ a{
     }
 }
 @media (min-width: 576px) {
+    .top-content{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
     .carousel-item {
         margin-right: 0;
     }
@@ -152,6 +157,10 @@ a{
 }
 /* MD */
 @media (min-width: 768px) {
+    .top-content{
+        margin-left: 60px;
+        margin-right: 60px;
+    }
     /* show 3rd of 3 item slide */
     .carousel-inner .active + .carousel-item + .carousel-item {
         display: block;
@@ -247,10 +256,7 @@ section{
 .card{
     border:1px solid black;
 }
-.top-content{
-    margin-left: 100px;
-    margin-right: 100px;
-}
+
 .card-body{
     min-height: 250px;
     max-height: 250px;
