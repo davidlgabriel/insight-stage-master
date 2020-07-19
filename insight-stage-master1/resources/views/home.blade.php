@@ -2,7 +2,7 @@
 
 @section('content')
 
-<section>
+<section id="slider">
 <div class="top-content">
     <div class="container-fluid">
         <h1 class="slider-title">Trending Posts</h1>
