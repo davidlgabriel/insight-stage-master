@@ -227,8 +227,8 @@ a{
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
-    height: 50px;
-    width: 50px;
+    height: 25px;
+    width: 25px;
     outline: black;
     background-color: rgba(0, 0, 0, 0.3);
     background-size: 60%, 60%;
@@ -260,6 +260,7 @@ section{
 .card-body{
     min-height: 250px;
     max-height: 250px;
+    padding: 16px 16px 0px 16px;
 }
 .card-title{
     color: #afafaf;
