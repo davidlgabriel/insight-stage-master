@@ -247,7 +247,10 @@ section{
 .card{
     border:1px solid black;
 }
-
+.top-content{
+    margin-left: 100px;
+    margin-right: 100px;
+}
 .card-body{
     min-height: 250px;
     max-height: 250px;
