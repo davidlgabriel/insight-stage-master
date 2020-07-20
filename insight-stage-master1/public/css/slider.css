@@ -191,7 +191,7 @@ a{
 @media (min-width: 991px) {
     /* show 4th item */
     .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
-        display: block;
+        display: inline-block;
     }
     .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
         transition: none;
@@ -235,8 +235,8 @@ a{
     border-radius: 100%;
 }
 section{
-    margin-bottom:30px ;
-    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .button {
@@ -256,11 +256,17 @@ section{
 .card{
     border:1px solid black;
 }
-
+.card:hover{
+    box-shadow: 0px 0px 10px 0px #E1A042;
+}
 .card-body{
-    min-height: 250px;
-    max-height: 250px;
+    min-height: 150px;
+    max-height: 200px;
     padding: 16px 16px 0px 16px;
+}
+.card-img-top{
+    min-height: 200px;
+    max-height: 200px;
 }
 .card-title{
     color: #afafaf;
@@ -268,3 +274,4 @@ section{
 .card-title:hover{
     color: #E1A042;
 }
+
