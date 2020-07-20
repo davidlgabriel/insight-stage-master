@@ -5,6 +5,11 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: #616971;
   }
+  a:link
+{
+text-decoration:none;
+}
+  
   /*============= NAVIGATION =============*/
   .navbar-brand img{
       height: 3rem;
@@ -30,6 +35,10 @@ body {
   .nav-link:hover{
       color: #E1A042!important;
   }
+
+  main{
+    display: block;
+  }
   .py-4 {
     padding-top: 1.2rem !important;
   }
@@ -44,36 +53,11 @@ body {
     margin-right: auto;
     margin-left: auto;
   }
-  main{
-      height: 445px;
-  }
-
-  
-  
-  /*============= CAROUSEL =============*/
-  
-  
-  
-  /*---Change Carousel Transition Speed --*/
-  
-  
-  /*-- Carousel Content --*/
-  
-  
-  
-  /*===== FIXED BACKGROUND IMG =====*/
-  
-  
-  
-  /*-- Emoji Navbar --*/
-  
-  
-  
+ 
   /*============= FOOTER =============*/
   footer {
     position: relative;
     background-color: #E1A042; 
-    border-top: 1px solid black ;
   }
 
   footer p{
@@ -83,6 +67,9 @@ body {
       margin-top: 0px;
       font-size: 12px;
   }
+
+  /*======POST SLIDER============*/
+ 
 
     
   /*============= MEDIA QUERIES =============*/
@@ -95,7 +82,9 @@ body {
   @media (max-width: 767.98px) {
   
   }
+
   
+ 
   
   /*============ BOOTSTRAP BREAK POINTS:
   
