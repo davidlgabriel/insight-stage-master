@@ -9,15 +9,6 @@
 .team4 h2, .team4 h3, .team4 h4, .team4 h5, .team4 h6 {
   color: #3e4555;
 }
-
-.team4 h1{
-  color: #ffcc24e0;
-  font-family:'Montserrat';
-  font-weight: 300px;
-  font-size: 50px;
-}
-
-
 .team4 .font-weight-medium {
    font-family: "Coves";
    font-weight: 40px;
@@ -37,7 +28,7 @@
 }
 
 .team4 ul li a {
-  color: #c9a505;
+  color: #acacac;
   padding-right: 15px;
   line-height: 22px;
   -webkit-transition: 0.1s ease-in;
@@ -49,4 +40,9 @@
   -webkit-transform: translate3d(0px, -5px, 0px);
   transform: translate3d(0px, -5px, 0px);
 	color: #f8dd42;
+}
+.slider-title {
+  text-align: center;
+  margin: 30px auto;
+  color: #E1A042;
 }

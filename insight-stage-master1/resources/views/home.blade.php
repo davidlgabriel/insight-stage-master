@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-
+<!--begin Slider-->
 <section id="slider" style="background-image: url('{{ asset('img/')}}'); background-size:cover;background-repeat:no-repeat;">
 <div class="top-content">
     <div class="container-fluid">
@@ -69,15 +69,17 @@
 </div>
 
 </section>
+<!--End Slider-->
 
-<section id="members">
+<!------------------------------------------------>
 
-
-<div class="container team4" style="max-width:1200px;margin-right:auto;justify-content:center;margin: auto;">	
-    <h1 class="slider-title" style="line-height:300px;">Our Team</h1>						
+<!--Begin Members-->
+<section id="members" style="background-image: url('{{ asset('img/')}}'); background-size:cover;background-repeat:no-repeat;">
+<div class="container team4" style="margin-right:auto;justify-content:center;margin: auto;">	
+    <h1 class="slider-title">Our Team</h1>						
 	<div class="row" >
       <!-- column  -->
-      <div class="col-lg-3 mb-4"style="margin:auto;" >
+      <div class="col-lg-3 col-md-6 mb-lg-0  mb-4"style="margin:auto;" >
         <!-- Row -->
         <div class="row" style="justify-content:center;">
           <div class="col-md-12 text-center" >
@@ -88,10 +90,12 @@
               <h5 class="mt-4 font-weight-medium mb-0" >Lewis Hamilton</h5>
               <h6 class="subtitle mb-3">Mercedes-AMG-Petronas</h6>
               <ul class="list-inline">
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" style="line-height:12px;"><i class="icon-social-linkedin"></i></a></li>
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" style="line-height:12px;"><i class="icon-paper-plane"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Linkedin" style="line-height:12px;"><i class="icon-social-linkedin"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Facebook"><i class="icon-social-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Twitter"><i class="icon-social-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Instagram"><i class="icon-social-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="GitHub"><i class="icon-social-github"></i></a></li>
                
-                
               </ul>
             </div>
           </div>
@@ -100,7 +104,7 @@
       </div>
       <!-- column  -->
       <!-- column  -->
-      <div class="col-lg-3 mb-4"style="margin:auto;" >
+      <div class="col-lg-3 col-md-6 mb-lg-0  mb-4"style="margin:auto;" >
         <!-- Row -->
         <div class="row" style="justify-content:center;">
           <div class="col-md-12 text-center" >
@@ -111,9 +115,11 @@
               <h5 class="mt-4 font-weight-medium mb-0" >Valteri Bottas</h5>
               <h6 class="subtitle mb-3">Mercedes-AMG-Petronas</h6>
               <ul class="list-inline">
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" style="line-height:12px;"><i class="icon-social-linkedin"></i></a></li>
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" style="line-height:12px;"><i class="icon-paper-plane"></i></a></li>
-               
+              <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Linkedin" style="line-height:12px;"><i class="icon-social-linkedin"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Facebook"><i class="icon-social-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Twitter"><i class="icon-social-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Instagram"><i class="icon-social-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="GitHub"><i class="icon-social-github"></i></a></li>
                 
               </ul>
             </div>
@@ -123,7 +129,7 @@
       </div>
       <!-- column  -->
        <!-- column  -->
-       <div class="col-lg-3 mb-4"style="margin:auto;" >
+       <div class="col-lg-3 col-md-6 mb-lg-0  mb-4"style="margin:auto;" >
         <!-- Row -->
         <div class="row" style="justify-content:center;">
           <div class="col-md-12 text-center" >
@@ -134,11 +140,12 @@
               <h5 class="mt-4 font-weight-medium mb-0" >Charles Leclerc</h5>
               <h6 class="subtitle mb-3">Ferrari</h6>
               <ul class="list-inline">
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" style="line-height:12px;"><i class="icon-social-linkedin"></i></a></li>
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" style="line-height:12px;"><i class="icon-paper-plane"></i></a></li>
-               
-                
-              </ul>
+              <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Linkedin" style="line-height:12px;"><i class="icon-social-linkedin"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Facebook"><i class="icon-social-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Twitter"><i class="icon-social-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Instagram"><i class="icon-social-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="GitHub"><i class="icon-social-github"></i></a></li>
+               </ul>
             </div>
           </div>
         </div>
@@ -146,7 +153,7 @@
       </div>
       <!-- column  -->
        <!-- column  -->
-       <div class="col-lg-3 mb-4"style="margin:auto;" >
+       <div class="col-lg-3 col-md-6 mb-lg-0  mb-4"style="margin:auto;" >
         <!-- Row -->
         <div class="row" style="justify-content:center;">
           <div class="col-md-12 text-center" >
@@ -157,10 +164,12 @@
               <h5 class="mt-4 font-weight-medium mb-0" >Max Verstappen</h5>
               <h6 class="subtitle mb-3">RedBull-Aston Martin</h6>
               <ul class="list-inline">
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" style="line-height:12px;"><i class="icon-social-linkedin"></i></a></li>
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" style="line-height:12px;"><i class="icon-paper-plane"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Linkedin" style="line-height:12px;"><i class="icon-social-linkedin"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Facebook"><i class="icon-social-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Twitter"><i class="icon-social-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Instagram"><i class="icon-social-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="GitHub"><i class="icon-social-github"></i></a></li>
                
-                
               </ul>
             </div>
           </div>
@@ -169,7 +178,7 @@
       </div>
       <!-- column  -->
        <!-- column  -->
-       <div class="col-lg-3 mb-4"style="margin:auto;" >
+       <div class="col-lg-3 col-md-6 mb-lg-0  mb-4"style="margin:auto;" >
         <!-- Row -->
         <div class="row" style="justify-content:center;">
           <div class="col-md-12 text-center" >
@@ -180,10 +189,12 @@
               <h5 class="mt-4 font-weight-medium mb-0" >Lando Norris</h5>
               <h6 class="subtitle mb-3">McLaren-Renault</h6>
               <ul class="list-inline">
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" style="line-height:12px;"><i class="icon-social-linkedin"></i></a></li>
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" style="line-height:12px;"><i class="icon-paper-plane"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Linkedin" style="line-height:12px;"><i class="icon-social-linkedin"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Facebook"><i class="icon-social-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Twitter"><i class="icon-social-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Instagram"><i class="icon-social-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="GitHub"><i class="icon-social-github"></i></a></li>
                
-                
               </ul>
             </div>
           </div>
@@ -193,7 +204,7 @@
       <!-- column  -->
 
       <!-- column  -->
-      <div class="col-lg-3 mb-4"style="margin:auto;" >
+      <div class="col-lg-3 col-md-6 mb-lg-0  mb-4"style="margin:auto;" >
         <!-- Row -->
         <div class="row" style="justify-content:center;">
           <div class="col-md-12 text-center" >
@@ -204,10 +215,12 @@
               <h5 class="mt-4 font-weight-medium mb-0" >Carlos Sainz</h5>
               <h6 class="subtitle mb-3">McLaren-Renault</h6>
               <ul class="list-inline">
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" style="line-height:12px;"><i class="icon-social-linkedin"></i></a></li>
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" style="line-height:12px;"><i class="icon-paper-plane"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Linkedin" style="line-height:12px;"><i class="icon-social-linkedin"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Facebook"><i class="icon-social-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Twitter"><i class="icon-social-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Instagram"><i class="icon-social-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="GitHub"><i class="icon-social-github"></i></a></li>
                
-                
               </ul>
             </div>
           </div>
@@ -216,7 +229,7 @@
       </div>
       <!-- column  -->
       <!-- column  -->
-      <div class="col-lg-3 mb-4"style="margin:auto;" >
+      <div class="col-lg-3 col-md-6 mb-lg-0  mb-4"style="margin:auto;" >
         <!-- Row -->
         <div class="row" style="justify-content:center;">
           <div class="col-md-12 text-center" >
@@ -227,11 +240,12 @@
               <h5 class="mt-4 font-weight-medium mb-0" >Esteban Ocon</h5>
               <h6 class="subtitle mb-3">Renault</h6>
               <ul class="list-inline">
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" style="line-height:12px;"><i class="icon-social-linkedin"></i></a></li>
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" style="line-height:12px;"><i class="icon-paper-plane"></i></a></li>
-               
-                
-              </ul>
+              <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Linkedin" style="line-height:12px;"><i class="icon-social-linkedin"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Facebook"><i class="icon-social-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Twitter"><i class="icon-social-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Instagram"><i class="icon-social-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="GitHub"><i class="icon-social-github"></i></a></li>
+               </ul>
             </div>
           </div>
         </div>
@@ -239,7 +253,7 @@
       </div>
       <!-- column  -->
       <!-- column  -->
-      <div class="col-lg-3 mb-4"style="margin:auto;" >
+      <div class="col-lg-3 col-md-6 mb-lg-0  mb-4"style="margin:auto;" >
         <!-- Row -->
         <div class="row" style="justify-content:center;">
           <div class="col-md-12 text-center" >
@@ -250,11 +264,12 @@
               <h5 class="mt-4 font-weight-medium mb-0" >Alexander Albon</h5>
               <h6 class="subtitle mb-3">RedBull-Aston Martin</h6>
               <ul class="list-inline">
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" style="line-height:12px;"><i class="icon-social-linkedin"></i></a></li>
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" style="line-height:12px;"><i class="icon-paper-plane"></i></a></li>
-               
-                
-              </ul>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Linkedin" style="line-height:12px;"><i class="icon-social-linkedin"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Facebook"><i class="icon-social-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Twitter"><i class="icon-social-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Instagram"><i class="icon-social-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="GitHub"><i class="icon-social-github"></i></a></li>
+               </ul>
             </div>
           </div>
         </div>
