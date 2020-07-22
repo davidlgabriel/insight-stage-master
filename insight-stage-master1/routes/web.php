@@ -14,3 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'PageController@index')->name('home');
+
+
+//Article
+Route::get('/article/submit', 'ArticleController@create');
+Route::post('/article', 'ArticleController@store');
+
+//all
+Route::get('/article', 'ArticleController@index');
+Route::get('/article/all/{id}','ArticleController@show');
+Route::get('/article/download/{file}','ArticleController@download');
