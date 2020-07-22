@@ -51,7 +51,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a href="{{ url('/') }}" class="nav-link active">Home</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Articles</a></li>
+                    <li class="nav-item"><a href="{{ url('/articles') }}" class="nav-link">Articles</a></li>
                     <li class="nav-item"><a href="" class="nav-link">Send us your work</a></li>
                     <li class="nav-item"><a href="" class="nav-link">Teams</a></li>
                     
