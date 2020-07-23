@@ -66,7 +66,7 @@
         <div class="container">
             <div class="row text-light text-center py-4 justify-content-center">
                 <div class="col-sm-10 col-md-8 col-lg-6">
-                    <p>Copyright &copy; 2020 Insight Stage - All rights reserved</p>
+                    <p>Copyright &copy; 2020 Insight Stage - All rights reserved - Tudo Puta!!</p>
                 </div>
             </div>
         </div>
