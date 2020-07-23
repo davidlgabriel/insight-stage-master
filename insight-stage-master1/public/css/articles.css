@@ -10,24 +10,20 @@
 /* ------------------------------------------------------------------- 
  * ## links
  * ------------------------------------------------------------------- */
- a {
-   color: #0054a5;
-   -webkit-transition: all 0.3s ease-in-out;
-   transition: all 0.3s ease-in-out;
+
+.preto{
+   color: #1b1a1a;
 }
 
-a:hover, a:focus, a:active {
+
+.branco {
    color: #ffffff;
+   
 }
-
-a:hover, a:active {
-   outline: 0;
-}
-
 
 p {
    margin: 0;
-   color: #ffffff;
+   
 }
 
 
@@ -190,6 +186,8 @@ blockquote cite a, blockquote cite a:visited {
    margin-left:7%;
    margin-top:10%;
    margin-bottom:1%;
+   color:#383636;
+   font-family:'Merriweather';
 }
 
 .masonry .entry__thumb, .masonry .entry__text {
@@ -199,8 +197,7 @@ blockquote cite a, blockquote cite a:visited {
 
 .masonry .entry__text {
    padding: 11rem 1.2rem 1.6rem;
- 
-   background-color: #FFFFFF;
+  
 }
 
 .masonry .entry__title {
@@ -213,7 +210,7 @@ blockquote cite a, blockquote cite a:visited {
 }
 
 .masonry .entry__title a {
-   color: #ffffff;
+   
    border-bottom: 1px solid transparent;
 
 }
@@ -229,9 +226,7 @@ blockquote cite a, blockquote cite a:visited {
   
 }
 
-.masonry .entry__date a {
-   color: #FFFFFF;
-}
+
 
 .masonry .entry__excerpt {
    margin-bottom: 3%;
@@ -407,7 +402,7 @@ blockquote cite a, blockquote cite a:visited {
  *
  * ------------------------------------------------------------------- */
 .s-content {
-   background-color: #e9e8e1;
+   background-color: #d6d6d6;
    padding-bottom: 7rem;
   
 }

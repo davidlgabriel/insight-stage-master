@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Faustina:500">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:700">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/slider.css') }}" rel="stylesheet">
     <link href="{{ asset('css/hamburgers.css') }}" rel="stylesheet">
