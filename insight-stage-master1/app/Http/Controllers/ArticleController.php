@@ -13,6 +13,7 @@ class ArticleController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
     public function index()
     {
         $file=Article::all();
@@ -108,5 +109,16 @@ class ArticleController extends Controller
     public function destroy(Article $article)
     {
         //
+    }
+
+    
+    /**
+     * Return the articles page.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function articles()
+    {
+        return view('articlespage');
     }
 }
