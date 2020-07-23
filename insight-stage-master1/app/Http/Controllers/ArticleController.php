@@ -38,9 +38,14 @@ class ArticleController extends Controller
     public function store(Request $request)
     {
         $data=new Article;
+        if($request->message == null){
+            $data->message="";
+        }
         $data->name=$request->name;
         $data->email=$request->email;
+        if($request->message != null){
         $data->message=$request->message;
+        }
         if ($request->file('file')) {
             # code...
             $file=$request->file('file');

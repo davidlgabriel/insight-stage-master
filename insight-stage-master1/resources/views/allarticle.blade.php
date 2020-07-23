@@ -6,7 +6,8 @@
     <tr>
     <th>Name</th>
     <th>email</th>
-    <th>massage</th>
+    <th>message</th>
+    <th>images</th>
     <th>file</th>
     </tr>
     @foreach($file as $key=>$data)
@@ -15,6 +16,7 @@
         <td>{{$data->verif}}</td>
         <td>{{$data->email}}</td>
         <td>{{$data->message}}</td>
+        <td><img src="{{asset($data->image)}}" style="width:100px"alt=""></td>
         <td><a href="/article/all/{{$data->id}}">View</a></td>
         <td><a href="/article/download/{{$data->file}}">Download</a></td>
     </tr>
