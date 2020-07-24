@@ -48,6 +48,36 @@
                             <div class="card-body">
                                 <a class="card-title font-weight-bold" href=""><h5 class="card-title font-weight-bold">Card title</h5></a>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                
+                            </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card mb-2">
+                        <img class="card-img-top" src="{{ asset('img/23.jpeg') }}" alt="Card image cap">
+                            <div class="card-body">
+                                <a class="card-title font-weight-bold" href=""><h5 class="card-title font-weight-bold">Card title</h5></a>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                
+                            </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card mb-2">
+                        <img class="card-img-top" src="{{ asset('img/23.jpeg') }}" alt="Card image cap">
+                            <div class="card-body">
+                                <a class="card-title font-weight-bold" href=""><h5 class="card-title font-weight-bold">Card title</h5></a>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                
+                            </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card mb-2">
+                        <img class="card-img-top" src="{{ asset('img/23.jpeg') }}" alt="Card image cap">
+                            <div class="card-body">
+                                <a class="card-title font-weight-bold" href=""><h5 class="card-title font-weight-bold">Card title</h5></a>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
                             </div>
                     </div>
