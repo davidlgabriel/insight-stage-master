@@ -53,6 +53,8 @@ text-decoration:none;
     margin-right: auto;
     margin-left: auto;
   }
+
+
  
   /*============= FOOTER =============*/
   footer {
@@ -138,4 +140,14 @@ text-decoration:none;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     will-change: transform;
+  }
+
+  .submit-title{
+    margin-top:100px;
+    margin-bottom:100%;
+    line-height:1em;
+  }
+  
+  .submit-form{
+    margin-top:100px;
   }
