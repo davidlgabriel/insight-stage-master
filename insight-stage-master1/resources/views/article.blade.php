@@ -3,10 +3,10 @@
 @section('content')
 
 
-<section class="submit">
+<section class="submit" >
     <div class="container">
         <div class="title" >
-            <div style="margin-bottom:6%;">
+            <div style="margin-bottom:6%;margin-right:10%;">
              <h1> Submit your Article </h1>
             </div>
         <div>
@@ -14,48 +14,53 @@
         <div class="form">
             <form action="/article" method="POST" enctype="multipart/form-data">
                 {{csrf_field()}}
-                <div class="row">
+              
+                
                     
-                    <div class="">
+                    <div class="sub" style="margin-right:10%;">
+                        
                         <div class="form-group" >
-                            <label for="exampleInputEmail1" style="line-height:30px;">Name</label>
+                            <label for="exampleInputEmail1" style="line-height:20px;">Name</label>
                         </div>
-                        <div class="form-group clor">
-                            <input type="text" name="name"  required>
-                    </div>
 
-                    <div class="">
-                        <div class="form-group">
+                        <div class="form-group clor" style="margin-bottom:5%;">
+                            <input type="text" name="name"  required>
+                        </div>
+                  
+                        <div class="form-group" >
                             <label for="exampleInputEmail1">Email address</label>
                         </div>
+
                         <div class="form-group">
                             <input type="text" name="email" required>
                         </div>
-                    </div>
+                        
+                        </div>
+                        <div class="form-group" style="margin-top:10%;margin-right:10%;">
+                            <label for="exampleInputEmail1">Message</label>
+                        </div>
 
-                    <div class="">
-                        <div class="form-group">
-                            <label class="file">
-                            <input type="file" name="file" required>
+                        <div class="" style="margin-right:10%;">
+                            <textarea type="text" class="messaging" name="message" value="" style="width:50%;text-align:left;"></textarea>
+                        
+                        </div>
+                        
+                
+
+                        <div class="form-group" style="margin-right:10%;">
+                            <label class="file" style="margin-top:5%";>
+                            <input type="file"  name="file" required>
                             Add a file
                             </label>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="" style="margin-left:60%;margin-top:0%;line-height:200%;">
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Message</label>
-                        </div>
-                        <div class="form-group" >
-                            <input type="text" name="message" value="" style="padding-top:47%;width:210%;">
-                        
-                        </div>
-                        <div class="">
+
+                        <div class="submit" style="line-height:200%;margin-right:10%;">
                             <input type="submit" value="Submit">
                         </div>
-                    </div>
-                </div>
+
+              
+                  
+                
             </form>
         
         </div>

@@ -52,37 +52,49 @@ text-decoration:none;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    text-align:center;
   }
 
   
 
   input[type=text] {
-    color: #c7bb85;
-    border-radius: 25px; 
-    background:#49483F; 
-    border: 3px solid #49483F; 
+    background: #ffffff;
+    color:#1a3146; 
+    border: 2px solid #ffffff; 
+    border-bottom: 1px solid #1a3146; 
     width: 300px; 
     height: 40px;
     justify-content: center;
-    text-align: left;
-    padding: 0 13px;
-   
+    text-align: center;
   }
+   
 
   input[type=submit] {
-    background: #c7bb85;
+    background: #ffffff;
+    color:#1a3146; 
+    border: 2px solid #1a3146; 
     border-radius: 25px; 
-    color:#49483F; 
-    border: 3px solid #49483F; 
-    width: 300px; 
-    height: 50px;
     justify-content: center;
     text-align: center;
-    padding: 0 13px;
-   
+    height: 50px;
+    width:300px;
   }
 
-  input[type=file] {
+
+   .messaging{
+   
+    height: 200px;
+    padding-left:1%;
+    padding-right:10%;
+    color:#1a3146;
+    background-color:#ffffff;
+    border:1px solid #1a3146;
+    border-radius:1%;
+  
+    
+   }
+
+  input[type=file], .textmessage {
     display:none;
     
    
@@ -90,20 +102,20 @@ text-decoration:none;
 
   
    .file{
-    background: #c7bb85;
+
+    background: #ffffff;
     border-radius: 25px; 
-    color:#49483F; 
-    border: 3px solid #49483F;
+    color:#1a3146; 
+    border: 2px solid #1a3146;
     height: 50px;
     width:300px;
     justify-content: center;
     text-align: center;
+
+  
   }
 
 
-  .clor{
-    color: #c7bb85;
-  }
 
  
   /*============= FOOTER =============*/
@@ -192,73 +204,22 @@ text-decoration:none;
     will-change: transform;
   }
 
-  .submit {
-    background-color: #c7bb85 ;
-   }
+  
 
   .title{
     margin-top:8%;
     margin-bottom:100%;
     font-family:'Merriweather';
-    color:#49483F;
+    color:#1a3146; 
+    
   }
   
   form{
-    margin-top:1000%;
     margin:auto;
     line-height: 40px;
   }
 
   
-.forma{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -100px;
-  margin-left: -250px;
-  width: 500px;
-  height: 200px;
-  border: 4px dashed #000;
-}
-.forma-p{
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  line-height: 170px;
-  color: #000000;
-  font-family: Arial;
-}
-.forma-input{
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  outline: none;
-  opacity: 0;
-}
-.forma-button{
-  margin: 0;
-  color: #000;
-  background: #16a085;
-  border: none;
-  width: 508px;
-  height: 35px;
-  margin-top: -20px;
-  margin-left: -4px;
-  border-radius: 4px;
-  border-bottom: 4px solid #117A60;
-  transition: all .2s ease;
-  outline: none;
-}
-.forma-button:hover{
-  background: #149174;
-	color: #0C5645;
-}
-.forma-button:active{
-  border:0;
-}
-
 
 
 
