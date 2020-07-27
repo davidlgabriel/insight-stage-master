@@ -112,13 +112,4 @@ class ArticleController extends Controller
     }
 
     
-    /**
-     * Return the articles page.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function articles()
-    {
-        return view('articlespage');
-    }
 }

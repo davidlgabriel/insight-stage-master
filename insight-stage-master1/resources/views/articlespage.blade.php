@@ -9,16 +9,16 @@
         <div class="row" style="justify-content:center;margin:auto;">
             
             
-            <div class="masonry">
+            <div class="cardlike" >
             
-            <div class="headtitle" >
+            <div class="headtitle">
                 <h1> Last Week </h1>
              </div>
 
 
                 <div class="grid-sizer"></div>
 
-                <article class="masonry__brick entry format-standard" data-aos="fade-up">
+                <article class="cardlike__brick entry format-standard" data-aos="fade-up">
                 <a href="single-standard.html"></p>
                     
 
@@ -30,16 +30,14 @@
                         <h1 class="entry__title" style="font-family:'Faustina';" ><p class="branco">Atirei um pau ao gato,mas o gato não morreu, dona chica assustou-se.</p></h1>
                         
                     </div>
-                    <div class="entry__excerpt" > 
-                            <img src="https://pyxis.nymag.com/v1/imgs/65f/4e9/ce213a625560f2862f9528e52f8eff7924-26-donald-trump-2.rsquare.w700.jpg" alt="" class="img-fluid rounded-circle" style="max-width:74px;margin-right:9%;" />
-                    </div>
-                    <div class="row" >
-                            <div class="entry__date" style="font-family:'Faustina';"> 
+                    
+                    <div class="row">
+                            <div class="entry__date" style="font-family:'Faustina';margin-bottom:3%"> 
                                 <p class="branco" > 10 | 12 | 2017</p>
                             </div>
-                            <div class="entry__excerpt" style="font-family:'Faustina'; margin-left:30%;">
+                            <div class="entry__excerpt" style="font-family:'Faustina';">
                                 <p class="branco">
-                                     by Miguel Guilherme
+                                     Miguel Guilherme
                                 </p>
                             </div>
                         </div>
@@ -49,7 +47,7 @@
 
                 </article> <!-- end article -->
 
-                <article class="masonry__brick entry format-standard" data-aos="fade-up">
+                <article class="cardlike__brick entry format-standard" data-aos="fade-up">
                 <a href="single-standard.html"></p>
                     
 
@@ -60,16 +58,14 @@
                         <h1 class="entry__title" style="font-family:'Faustina';" ><p class="branco">Atirei um pau ao gato,mas o gato não morreu, dona chica assustou-se.</p></h1>
                         
                     </div>
-                    <div class="entry__excerpt" > 
-                            <img src="https://pyxis.nymag.com/v1/imgs/65f/4e9/ce213a625560f2862f9528e52f8eff7924-26-donald-trump-2.rsquare.w700.jpg" alt="" class="img-fluid rounded-circle" style="max-width:74px;margin-right:9%;" />
-                    </div>
+                   
                     <div class="row" >
-                            <div class="entry__date" style="font-family:'Faustina';"> 
-                                <p class="branco"> 10 | 12 | 2017</p>
+                        <div class="entry__date" style="font-family:'Faustina';margin-bottom:3%"> 
+                                <p class="branco" > 10 | 12 | 2017</p>
                             </div>
-                            <div class="entry__excerpt" style="font-family:'Faustina'; margin-left:30%;">
+                            <div class="entry__excerpt" style="font-family:'Faustina';">
                                 <p class="branco">
-                                    by Miguel Guilherme
+                                    Miguel Guilherme
                                 </p>
                             </div>
                         </div>
@@ -80,7 +76,7 @@
                 </article> <!-- end article -->
 
 
-                <article class="masonry__brick entry format-standard" data-aos="fade-up">
+                <article class="cardlike__brick entry format-standard" data-aos="fade-up">
                 <a href="single-standard.html"></a>
                     
 
@@ -91,16 +87,14 @@
                         <h1 class="entry__title" style="font-family:'Faustina';" ><p class="branco">Atirei um pau ao gato,mas o gato não morreu, dona chica assustou-se.</p></h1>
                         
                     </div>
-                    <div class="entry__excerpt" > 
-                            <img src="https://pyxis.nymag.com/v1/imgs/65f/4e9/ce213a625560f2862f9528e52f8eff7924-26-donald-trump-2.rsquare.w700.jpg" alt="" class="img-fluid rounded-circle" style="max-width:74px;margin-right:9%;" />
-                    </div>
+                    
                     <div class="row" >
-                            <div class="entry__date" style="font-family:'Faustina';"> 
-                            <p class="branco"> 10 | 12 | 2017</p>
+                        <div class="entry__date" style="font-family:'Faustina';margin-bottom:3%"> 
+                                <p class="branco" > 10 | 12 | 2017</p>
                             </div>
-                            <div class="entry__excerpt" style="font-family:'Faustina'; margin-left:30%;">
+                            <div class="entry__excerpt" style="font-family:'Faustina';">
                                 <p class="branco">
-                                    by Miguel Guilherme
+                                    Miguel Guilherme
                                 </p>
                             </div>
                         </div>
@@ -110,7 +104,7 @@
 
                 </article> <!-- end article -->
 
-                <article class="masonry__brick entry format-standard"  data-aos="fade-up">
+                <article class="cardlike__brick entry format-standard"  data-aos="fade-up">
                 <a href="single-standard.html"></a>
                     
 
@@ -121,16 +115,14 @@
                         <h1 class="entry__title" style="font-family:'Faustina'; color:#383636;" ><p class="preto">Atirei um pau ao gato,mas o gato não morreu, dona chica assustou-se.</p></h1>
                         
                     </div>
-                    <div class="entry__excerpt" > 
-                            <img src="https://pyxis.nymag.com/v1/imgs/65f/4e9/ce213a625560f2862f9528e52f8eff7924-26-donald-trump-2.rsquare.w700.jpg" alt="" class="img-fluid rounded-circle" style="max-width:74px;margin-right:9%;" />
-                    </div>
+                    
                     <div class="row" >
-                            <div class="entry__date" style="font-family:'Faustina';"> 
-                                <p class="preto"> 10 | 12 | 2017</p>
+                        <div class="entry__date" style="font-family:'Faustina';margin-bottom:3%"> 
+                                <p class="preto" > 10 | 12 | 2017</p>
                             </div>
-                            <div class="entry__excerpt" style="font-family:'Faustina'; margin-left:30%;">
+                            <div class="entry__excerpt" style="font-family:'Faustina';">
                                 <p class="preto">
-                                    by Miguel Guilherme
+                                    Miguel Guilherme
                                 </p>
                             </div>
                         </div>
@@ -141,7 +133,7 @@
                 </article> <!-- end article -->
 
 
-                <article class="masonry__brick entry format-standard" data-aos="fade-up">
+                <article class="cardlike__brick entry format-standard" data-aos="fade-up">
 
                     
 
@@ -152,16 +144,14 @@
                         <h1 class="entry__title" style="font-family:'Faustina';" ><p class="branco">Atirei um pau ao gato,mas o gato não morreu, dona chica assustou-se.</p></h1>
                         
                     </div>
-                    <div class="entry__excerpt" > 
-                            <img src="https://pyxis.nymag.com/v1/imgs/65f/4e9/ce213a625560f2862f9528e52f8eff7924-26-donald-trump-2.rsquare.w700.jpg" alt="" class="img-fluid rounded-circle" style="max-width:74px;margin-right:9%;" />
-                    </div>
+                    
                     <div class="row" >
-                            <div class="entry__date" style="font-family:'Faustina';"> 
-                                 <p class="branco"> 10 | 12 | 2017</p>
+                        <div class="entry__date" style="font-family:'Faustina';margin-bottom:3%"> 
+                                <p class="branco" > 10 | 12 | 2017</p>
                             </div>
-                            <div class="entry__excerpt" style="font-family:'Faustina'; margin-left:30%;">
+                            <div class="entry__excerpt" style="font-family:'Faustina';">
                             <p class="branco">
-                                    by Miguel Guilherme
+                                    Miguel Guilherme
                                 </p>
                             </div>
                         </div>
@@ -171,7 +161,7 @@
 
                 </article> <!-- end article -->
 
-                <article class="masonry__brick entry format-standard"  data-aos="fade-up">
+                <article class="cardlike__brick entry format-standard"  data-aos="fade-up">
                 <a href="single-standard.html"></a>
                     
 
@@ -182,16 +172,14 @@
                         <h1 class="entry__title" style="font-family:'Faustina'; color:#383636;" ><p class="branco">Atirei um pau ao gato,mas o gato não morreu, dona chica assustou-se.</p></h1>
                         
                     </div>
-                    <div class="entry__excerpt" > 
-                            <img src="https://pyxis.nymag.com/v1/imgs/65f/4e9/ce213a625560f2862f9528e52f8eff7924-26-donald-trump-2.rsquare.w700.jpg" alt="" class="img-fluid rounded-circle" style="max-width:74px;margin-right:9%;" />
-                    </div>
+                   
                     <div class="row" >
-                            <div class="entry__date" style="font-family:'Faustina';"> 
-                                <p class="branco"> 10 | 12 | 2017</p>
+                         <div class="entry__date" style="font-family:'Faustina';margin-bottom:3%"> 
+                                <p class="branco" > 10 | 12 | 2017</p>
                             </div>
-                            <div class="entry__excerpt" style="font-family:'Faustina'; margin-left:30%;">
+                            <div class="entry__excerpt" style="font-family:'Faustina';">
                                 <p class="branco">
-                                    by Miguel Guilherme
+                                    Miguel Guilherme
                                 </p>
                             </div>
                         </div>
@@ -204,11 +192,10 @@
 
                
 
-            </div> <!-- end masonry -->
-        </div> <!-- end masonry-wrap -->
+            </div> <!-- end cardlike -->
+        </div> <!-- end cardlike-wrap -->
 
         
-
     </section> <!-- s-content -->
     
 @endsection
