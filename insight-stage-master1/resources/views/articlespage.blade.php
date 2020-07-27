@@ -5,16 +5,22 @@
     
     <section class="s-content">
         <div class="row" style="justify-content:center;margin:auto;">
+<<<<<<< HEAD
             <div class="masonry">
+=======
             
-            <div class="headtitle" >
+            
+            <div class="cardlike" >
+>>>>>>> e002be4be8a72e176f489cdf47a0146c04747eb7
+            
+            <div class="headtitle">
                 <h1> Last Week </h1>
              </div>
 
 
                 <div class="grid-sizer"></div>
 
-                <article class="masonry__brick entry format-standard" data-aos="fade-up">
+                <article class="cardlike__brick entry format-standard" data-aos="fade-up">
                 <a href="single-standard.html"></p>
                     
 
@@ -26,13 +32,19 @@
                         <h1 class="entry__title" style="font-family:'Faustina';" ><p class="branco">Atirei um pau ao gato,mas o gato não morreu, dona chica assustou-se.</p></h1>
                         
                     </div>
+<<<<<<< HEAD
                     <div class="row" >
                             <div class="entry__date" style="font-family:'Faustina';"> 
+=======
+                    
+                    <div class="row">
+                            <div class="entry__date" style="font-family:'Faustina';margin-bottom:3%"> 
+>>>>>>> e002be4be8a72e176f489cdf47a0146c04747eb7
                                 <p class="branco" > 10 | 12 | 2017</p>
                             </div>
-                            <div class="entry__excerpt" style="font-family:'Faustina'; margin-left:30%;">
+                            <div class="entry__excerpt" style="font-family:'Faustina';">
                                 <p class="branco">
-                                     by Miguel Guilherme
+                                     Miguel Guilherme
                                 </p>
                             </div>
                         </div>
@@ -42,7 +54,7 @@
 
                 </article> <!-- end article -->
 
-                <article class="masonry__brick entry format-standard" data-aos="fade-up">
+                <article class="cardlike__brick entry format-standard" data-aos="fade-up">
                 <a href="single-standard.html"></p>
                     
 
@@ -53,13 +65,17 @@
                         <h1 class="entry__title" style="font-family:'Faustina';" ><p class="branco">Atirei um pau ao gato,mas o gato não morreu, dona chica assustou-se.</p></h1>
                         
                     </div>
+<<<<<<< HEAD
+=======
+                   
+>>>>>>> e002be4be8a72e176f489cdf47a0146c04747eb7
                     <div class="row" >
-                            <div class="entry__date" style="font-family:'Faustina';"> 
-                                <p class="branco"> 10 | 12 | 2017</p>
+                        <div class="entry__date" style="font-family:'Faustina';margin-bottom:3%"> 
+                                <p class="branco" > 10 | 12 | 2017</p>
                             </div>
-                            <div class="entry__excerpt" style="font-family:'Faustina'; margin-left:30%;">
+                            <div class="entry__excerpt" style="font-family:'Faustina';">
                                 <p class="branco">
-                                    by Miguel Guilherme
+                                    Miguel Guilherme
                                 </p>
                             </div>
                         </div>
@@ -70,7 +86,7 @@
                 </article> <!-- end article -->
 
 
-                <article class="masonry__brick entry format-standard" data-aos="fade-up">
+                <article class="cardlike__brick entry format-standard" data-aos="fade-up">
                 <a href="single-standard.html"></a>
                     
 
@@ -81,13 +97,17 @@
                         <h1 class="entry__title" style="font-family:'Faustina';" ><p class="branco">Atirei um pau ao gato,mas o gato não morreu, dona chica assustou-se.</p></h1>
                         
                     </div>
+<<<<<<< HEAD
+=======
+                    
+>>>>>>> e002be4be8a72e176f489cdf47a0146c04747eb7
                     <div class="row" >
-                            <div class="entry__date" style="font-family:'Faustina';"> 
-                            <p class="branco"> 10 | 12 | 2017</p>
+                        <div class="entry__date" style="font-family:'Faustina';margin-bottom:3%"> 
+                                <p class="branco" > 10 | 12 | 2017</p>
                             </div>
-                            <div class="entry__excerpt" style="font-family:'Faustina'; margin-left:30%;">
+                            <div class="entry__excerpt" style="font-family:'Faustina';">
                                 <p class="branco">
-                                    by Miguel Guilherme
+                                    Miguel Guilherme
                                 </p>
                             </div>
                         </div>
@@ -97,8 +117,15 @@
 
                 </article> <!-- end article -->
 
+<<<<<<< HEAD
                 <article class="masonry__brick entry format-standard"  data-aos="fade-up">
                 <a href="#"></a>
+=======
+                <article class="cardlike__brick entry format-standard"  data-aos="fade-up">
+                <a href="single-standard.html"></a>
+                    
+
+>>>>>>> e002be4be8a72e176f489cdf47a0146c04747eb7
                 <div class="entry__text" style="background-image:url('https://uploads-ssl.webflow.com/5a6aeaa5f9957b0001b66bf0/5b1e9075a2471591b0d50ddc_sossusvlei_2.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
                     <div class="entry__header">
                         
@@ -106,13 +133,17 @@
                         <h1 class="entry__title" style="font-family:'Faustina'; color:#383636;" ><p class="preto">Atirei um pau ao gato,mas o gato não morreu, dona chica assustou-se.</p></h1>
                         
                     </div>
+<<<<<<< HEAD
+=======
+                    
+>>>>>>> e002be4be8a72e176f489cdf47a0146c04747eb7
                     <div class="row" >
-                            <div class="entry__date" style="font-family:'Faustina';"> 
-                                <p class="preto"> 10 | 12 | 2017</p>
+                        <div class="entry__date" style="font-family:'Faustina';margin-bottom:3%"> 
+                                <p class="preto" > 10 | 12 | 2017</p>
                             </div>
-                            <div class="entry__excerpt" style="font-family:'Faustina'; margin-left:30%;">
+                            <div class="entry__excerpt" style="font-family:'Faustina';">
                                 <p class="preto">
-                                    by Miguel Guilherme
+                                    Miguel Guilherme
                                 </p>
                             </div>
                         </div>
@@ -123,7 +154,7 @@
                 </article> <!-- end article -->
 
 
-                <article class="masonry__brick entry format-standard" data-aos="fade-up">
+                <article class="cardlike__brick entry format-standard" data-aos="fade-up">
 
                     
 
@@ -134,13 +165,17 @@
                         <h1 class="entry__title" style="font-family:'Faustina';" ><p class="branco">Atirei um pau ao gato,mas o gato não morreu, dona chica assustou-se.</p></h1>
                         
                     </div>
+<<<<<<< HEAD
+=======
+                    
+>>>>>>> e002be4be8a72e176f489cdf47a0146c04747eb7
                     <div class="row" >
-                            <div class="entry__date" style="font-family:'Faustina';"> 
-                                 <p class="branco"> 10 | 12 | 2017</p>
+                        <div class="entry__date" style="font-family:'Faustina';margin-bottom:3%"> 
+                                <p class="branco" > 10 | 12 | 2017</p>
                             </div>
-                            <div class="entry__excerpt" style="font-family:'Faustina'; margin-left:30%;">
+                            <div class="entry__excerpt" style="font-family:'Faustina';">
                             <p class="branco">
-                                    by Miguel Guilherme
+                                    Miguel Guilherme
                                 </p>
                             </div>
                         </div>
@@ -150,7 +185,7 @@
 
                 </article> <!-- end article -->
 
-                <article class="masonry__brick entry format-standard"  data-aos="fade-up">
+                <article class="cardlike__brick entry format-standard"  data-aos="fade-up">
                 <a href="single-standard.html"></a>
                     
 
@@ -161,13 +196,17 @@
                         <h1 class="entry__title" style="font-family:'Faustina'; color:#383636;" ><p class="branco">Atirei um pau ao gato,mas o gato não morreu, dona chica assustou-se.</p></h1>
                         
                     </div>
+<<<<<<< HEAD
+=======
+                   
+>>>>>>> e002be4be8a72e176f489cdf47a0146c04747eb7
                     <div class="row" >
-                            <div class="entry__date" style="font-family:'Faustina';"> 
-                                <p class="branco"> 10 | 12 | 2017</p>
+                         <div class="entry__date" style="font-family:'Faustina';margin-bottom:3%"> 
+                                <p class="branco" > 10 | 12 | 2017</p>
                             </div>
-                            <div class="entry__excerpt" style="font-family:'Faustina'; margin-left:30%;">
+                            <div class="entry__excerpt" style="font-family:'Faustina';">
                                 <p class="branco">
-                                    by Miguel Guilherme
+                                    Miguel Guilherme
                                 </p>
                             </div>
                         </div>
@@ -180,11 +219,10 @@
 
                
 
-            </div> <!-- end masonry -->
-        </div> <!-- end masonry-wrap -->
+            </div> <!-- end cardlike -->
+        </div> <!-- end cardlike-wrap -->
 
         
-
     </section> <!-- s-content -->
     
 @endsection

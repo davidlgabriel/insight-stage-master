@@ -11,7 +11,7 @@
  * ## links
  * ------------------------------------------------------------------- */
 
-.preto{
+ .preto{
    color: #1b1a1a;
 }
 
@@ -175,13 +175,13 @@ blockquote cite a, blockquote cite a:visited {
 
 
 /* ------------------------------------------------------------------- 
- * ## masonry entries 
+ * ## cardlike entries 
  * ------------------------------------------------------------------- */
-.masonry .entry {
+.cardlike .entry {
    margin-bottom: 40px;
 }
 
-.masonry .headtitle{
+.cardlike .headtitle{
    text-align: left;
    margin-left:7%;
    margin-top:10%;
@@ -190,36 +190,36 @@ blockquote cite a, blockquote cite a:visited {
    font-family:'Merriweather';
 }
 
-.masonry .entry__thumb, .masonry .entry__text {
+.cardlike .entry__thumb, .cardlike .entry__text {
    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
 }
 
 
-.masonry .entry__text {
-   padding: 11rem 1.2rem 1.6rem;
-  
+.cardlike .entry__text {
+   padding: 8rem 1.2rem 1.6rem;
+   width: 100%;
 }
 
-.masonry .entry__title {
-   font-size: 30px;
+.cardlike .entry__title {
+   font-size: 25px;
    font-family: 'Average_Sans';
    line-height: 29px;
-   margin-top: 6px;
-   margin-bottom: 0rem;
+   margin-top: 30%;
+   margin-bottom: 15%;
    padding: 0 5px;
 }
 
-.masonry .entry__title a {
+.cardlike .entry__title a {
    
    border-bottom: 1px solid transparent;
 
 }
 
-.masonry .entry__title a:hover, .masonry .entry__title a:focus {
+.cardlike .entry__title a:hover, .cardlike .entry__title a:focus {
    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-.masonry .entry__date {
+.cardlike .entry__date {
    font-family:"HindVadodara-Light";
    font-size: 13px;
    line-height: 40px;
@@ -228,40 +228,41 @@ blockquote cite a, blockquote cite a:visited {
 
 
 
-.masonry .entry__excerpt {
+.cardlike .entry__excerpt {
    margin-bottom: 3%;
    margin-top: 3%;
    font-size: 1rem;
    line-height: 10px;
    text-align: right;
+   margin-left:20%;
 
 }
 
-.masonry .entry__meta {
+.cardlike .entry__meta {
    font-family: "metropolis-semibold", sans-serif;
    font-size: 1.5rem;
    margin-bottom: 0;
 }
 
-.masonry .entry__meta a {
+.cardlike .entry__meta a {
    color:  #ffffff;
 }
 
-.masonry .entry__meta a:hover, .masonry .entry__meta a:focus {
+.cardlike .entry__meta a:hover, .cardlike .entry__meta a:focus {
    color:#000000;
 }
 
-.masonry .entry__meta-links a::after {
+.cardlike .entry__meta-links a::after {
    content: ", ";
 }
 
-.masonry .entry__meta-links a:last-child::after {
+.cardlike .entry__meta-links a:last-child::after {
    display: none;
 }
 
 
 /* ------------------------------------------------------------------- 
- *  ## post formats - masonry view
+ *  ## post formats - cardlike view
  * ------------------------------------------------------------------- */
 
 /* format quote & format link
@@ -434,9 +435,9 @@ blockquote cite a, blockquote cite a:visited {
 
 
 /* -------------------------------------------------------------------
- * ## masonry layout
+ * ## cardlike layout
  * ------------------------------------------------------------------- */
-.masonry-wrap {
+.cardlike-wrap {
    max-width: none;
    width: 1440px;
    overflow: hidden;
@@ -444,82 +445,99 @@ blockquote cite a, blockquote cite a:visited {
    justify-content: center;
 }
 
-.masonry {
+.cardlike {
    margin-top: -6.4rem;
 }
 
-.masonry:after {
+.cardlike:after {
    content: "";
    display: table;
    clear: both;
 }
 
+<<<<<<< HEAD
 .masonry .grid-sizer, .masonry__brick {
    width: 300px;
+=======
+.cardlike .grid-sizer, .cardlike__brick {
+   width: 320px;
+>>>>>>> e002be4be8a72e176f489cdf47a0146c04747eb7
    margin-right: 0.1%;
-   margin-left: 7%;
-   margin-top:3%;
+   margin-left: 8.5%;
+   margin-top: 3%;
    margin-bottom:0.1%;
-   
-   
-   
-  
-  
 }
 
-.masonry__brick {
+
+.cardlike .subslider {
+   width: 280px;
+   margin-top:30%;
+   margin-bottom:-1.5%;
+   line-height:10%;
+}
+
+.cardlike__brick, .slider{
    float: left;
-   box-shadow: 0 2px 3px 0 rgba(0,0,0,0.5);
-   
-
+   box-shadow: 0 3px 2px 0 rgba(0,0,0,0.5);
 }
 
-.masonry__brick:hover {
+.cardlike__brick,.slider:hover {
   
-   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+   box-shadow: 0 10px 10px 1 rgba(0,0,0,0.1);
+   box-sizing: border-box;
    transition: 0.3s;
  }
 
 /* ------------------------------------------------------------------- 
  * responsive:
- * masonry layout
+ * cardlike layout
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:1480px) {
-   .masonry-wrap {
+   .cardlike-wrap {
       width: 1080px;
    }
 
 }
 
 @media only screen and (max-width:1140px) {
-   .masonry-wrap {
+   .cardlike-wrap {
       width: 1020px;
    }
 
+<<<<<<< HEAD
    .masonry .grid-sizer, .masonry .masonry__brick {
       width: 300px;
+=======
+   .cardlike .grid-sizer, .cardlike .cardlike__brick {
+      width: 340px;
+>>>>>>> e002be4be8a72e176f489cdf47a0146c04747eb7
    }
 
 }
 
 @media only screen and (max-width:1060px) {
-   .masonry-wrap {
+   .cardlike-wrap {
       width: 740px;
    }
 
+<<<<<<< HEAD
    .masonry .grid-sizer, .masonry .masonry__brick {
       width: 300px;
+=======
+   .cardlike .grid-sizer, .cardlike .cardlike__brick {
+      width: 370px;
+>>>>>>> e002be4be8a72e176f489cdf47a0146c04747eb7
    }
 
 }
 
 @media only screen and (max-width:800px) {
-   .masonry-wrap {
+   .cardlike-wrap {
       max-width: 700px;
       width: 90%;
    }
 
-   .masonry .grid-sizer, .masonry .masonry__brick {
+   .cardlike .grid-sizer, .cardlike .cardlike__brick {
       width: 50%;
       padding: 0 15px;
    }
@@ -527,11 +545,11 @@ blockquote cite a, blockquote cite a:visited {
 }
 
 @media only screen and (max-width:700px) {
-   .masonry-wrap {
+   .cardlike-wrap {
       max-width: 400px;
    }
 
-   .masonry .grid-sizer, .masonry .masonry__brick {
+   .cardlike .grid-sizer, .cardlike .cardlike__brick {
       width: 100%;
       clear: both;
    }
@@ -539,18 +557,18 @@ blockquote cite a, blockquote cite a:visited {
 }
 
 @media only screen and (max-width:600px) {
-   .masonry-wrap {
+   .cardlike-wrap {
       width: auto;
    }
 
-   .masonry .grid-sizer, .masonry .masonry__brick {
+   .cardlike .grid-sizer, .cardlike .cardlike__brick {
       padding: 0 10px;
    }
 
 }
 
 @media only screen and (max-width:400px) {
-   .masonry .masonry__brick {
+   .cardlike .cardlike__brick {
       width: 100% !important;
       float: none !important;
       clear: both !important;

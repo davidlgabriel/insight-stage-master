@@ -3,7 +3,7 @@ body {
     height: 100%;
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
-    color: #616971;
+    color: #ffffff;
   }
   a:link
 {
@@ -52,7 +52,81 @@ text-decoration:none;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    text-align:center;
   }
+
+/*---------------------submit article form ----------------------- */
+
+  form{
+    margin:auto;
+    line-height: 40px;
+  }
+
+  
+
+
+  input[type=text] {
+    background: #ffffff;
+    color:#1a3146; 
+    border: 2px solid #ffffff; 
+    border-bottom: 1px solid #1a3146; 
+    width: 300px; 
+    height: 40px;
+    justify-content: center;
+    text-align: center;
+  }
+   
+
+  input[type=submit] {
+    background: #ffffff;
+    color:#1a3146; 
+    border: 2px solid #1a3146; 
+    border-radius: 25px; 
+    justify-content: center;
+    text-align: center;
+    height: 50px;
+    width:300px;
+  }
+
+
+   .messaging{
+   
+    height: 200px;
+    padding-left:1%;
+    padding-right:10%;
+    color:#1a3146;
+    background-color:#ffffff;
+    border:1px solid #1a3146;
+    border-radius:1%;
+  
+    
+   }
+
+  input[type=file], .textmessage {
+    display:none;
+    
+   
+  }
+
+  
+   .file{
+
+    background: #ffffff;
+    border-radius: 25px; 
+    color:#1a3146; 
+    border: 2px solid #1a3146;
+    height: 50px;
+    width:300px;
+    justify-content: center;
+    text-align: center;
+
+
+  }
+
+  
+
+
+
  
   /*============= FOOTER =============*/
   footer {
@@ -109,7 +183,10 @@ text-decoration:none;
   .row, .container-fluid {
     margin-left: 0px !important;
     margin-right: 0px !important;
+    padding-bottom:4px;
   }
+
+  
   
   /*-- Fixed Background Image --*/
   .fixed-background {
@@ -139,3 +216,18 @@ text-decoration:none;
     transform: translateZ(0);
     will-change: transform;
   }
+
+  
+
+  .title{
+    margin-top:8%;
+    margin-bottom:100%;
+    font-family:'Merriweather';
+    color:#1a3146; 
+    
+  }
+  
+ 
+
+
+
