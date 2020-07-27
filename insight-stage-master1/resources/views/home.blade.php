@@ -9,10 +9,10 @@
         <div id="carousel-example" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner row w-100 mx-auto" role="listbox">
                 <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active" >
-                    <div class="card mb-2">
+                <div class="card mb-2">
                         <img class="card-img-top" src="{{ asset('img/23.jpeg') }}" alt="Card image cap">
                             <div class="card-body">
-                                <a class="card-title font-weight-bold" style="text-align= center;" href=""><h5 class="card-title font-weight-bold">Ciência de dados: Ferramentas para o combate à Covid-19</h5></a>
+                            <a class="card-title font-weight-bold" href=""><h5 class="card-title font-weight-bold">Ciência de dados: Ferramentas para o combate à Covid-19</h5></a>                          
                             </div>
                     </div>
                 </div>
