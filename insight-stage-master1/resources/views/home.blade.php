@@ -2,10 +2,16 @@
 
 @section('content')
 
-<section id="slider" style="background-image: url('{{ asset('img/')}}'); background-size:cover;background-repeat:no-repeat;">
+<section id="slider" style="background-image: url('{{ asset('img/')}}'); background-size:repeat;background-repeat:no-repeat;align-items: center;">
 <div class="top-content">
     <div class="container-fluid">
-        <h1 class="slider-title">Trending Posts</h1>
+        <div>
+        <div id="image">
+            <img src="{{ asset('img/IS23.png')}}" style="align-items: center;" alt="">
+        </div>
+        </div>
+
+        <h1 class="slider-title">TRENDING POSTS</h1>
         <div id="carousel-example" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner row w-100 mx-auto" role="listbox">
                 <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active" >

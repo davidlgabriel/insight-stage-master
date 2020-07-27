@@ -25,6 +25,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Google Fonts -->
     <link rel="shortcut icon" href="{{ asset('img/IS.png') }}">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
