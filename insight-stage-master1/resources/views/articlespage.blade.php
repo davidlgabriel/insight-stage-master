@@ -32,14 +32,11 @@
                         <h1 class="entry__title" style="font-family:'Faustina';" ><p class="branco">Atirei um pau ao gato,mas o gato não morreu, dona chica assustou-se.</p></h1>
                         
                     </div>
-<<<<<<< HEAD
-                    <div class="row" >
+            <div class="row" >
                             <div class="entry__date" style="font-family:'Faustina';"> 
-=======
                     
                     <div class="row">
                             <div class="entry__date" style="font-family:'Faustina';margin-bottom:3%"> 
->>>>>>> e002be4be8a72e176f489cdf47a0146c04747eb7
                                 <p class="branco" > 10 | 12 | 2017</p>
                             </div>
                             <div class="entry__excerpt" style="font-family:'Faustina';">
@@ -65,10 +62,6 @@
                         <h1 class="entry__title" style="font-family:'Faustina';" ><p class="branco">Atirei um pau ao gato,mas o gato não morreu, dona chica assustou-se.</p></h1>
                         
                     </div>
-<<<<<<< HEAD
-=======
-                   
->>>>>>> e002be4be8a72e176f489cdf47a0146c04747eb7
                     <div class="row" >
                         <div class="entry__date" style="font-family:'Faustina';margin-bottom:3%"> 
                                 <p class="branco" > 10 | 12 | 2017</p>
