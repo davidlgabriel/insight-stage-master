@@ -55,7 +55,15 @@ text-decoration:none;
     text-align:center;
   }
 
+/*---------------------submit article form ----------------------- */
+
+  form{
+    margin:auto;
+    line-height: 40px;
+  }
+
   
+
 
   input[type=text] {
     background: #ffffff;
@@ -112,7 +120,7 @@ text-decoration:none;
     justify-content: center;
     text-align: center;
 
-  
+
   }
 
 
@@ -214,13 +222,7 @@ text-decoration:none;
     
   }
   
-  form{
-    margin:auto;
-    line-height: 40px;
-  }
-
-  
-
+ 
 
 
 
