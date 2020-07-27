@@ -123,6 +123,8 @@ text-decoration:none;
 
   }
 
+  
+
 
 
  
@@ -181,7 +183,10 @@ text-decoration:none;
   .row, .container-fluid {
     margin-left: 0px !important;
     margin-right: 0px !important;
+    padding-bottom:4px;
   }
+
+  
   
   /*-- Fixed Background Image --*/
   .fixed-background {
