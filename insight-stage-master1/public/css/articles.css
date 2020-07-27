@@ -458,7 +458,7 @@ blockquote cite a, blockquote cite a:visited {
 .cardlike .grid-sizer, .cardlike__brick {
    width: 320px;
    margin-right: 0.1%;
-   margin-left: 7.5%;
+   margin-left: 8.5%;
    margin-top: 3%;
    margin-bottom:0.1%;
 }
@@ -467,18 +467,18 @@ blockquote cite a, blockquote cite a:visited {
 .cardlike .subslider {
    width: 280px;
    margin-top:30%;
-   margin-bottom:0%;
+   margin-bottom:-1.5%;
    line-height:10%;
 }
 
 .cardlike__brick, .slider{
    float: left;
-   box-shadow: 0 10px 10px 0 rgba(0,0,0,0.5);
+   box-shadow: 0 3px 2px 0 rgba(0,0,0,0.5);
 }
 
 .cardlike__brick,.slider:hover {
   
-   box-shadow: 0 2px 3px 1 rgba(0,0,0,0.1);
+   box-shadow: 0 10px 10px 1 rgba(0,0,0,0.1);
    box-sizing: border-box;
    transition: 0.3s;
  }

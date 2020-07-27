@@ -11,7 +11,7 @@
                 <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active" >
                  <div class="cardlike">
                     <div class="slider">
-                        <div class="subslider " data-aos="fade-up">
+                        <div class="subslider" data-aos="fade-up">
                             <a href="single-standard.html"></a>
                             <div class="entry__text" style="background-image:url('https://images.adsttc.com/media/images/589b/018a/e58e/ce4e/a300/01b5/newsletter/AS5A3100.jpg?1486553475');background-position: center;background-repeat: no-repeat;background-size: cover;">
                                 <div class="entry__header">
@@ -107,7 +107,7 @@
               <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 " >
                  <div class="cardlike">
                     <div class="slider">
-                        <div class="subslider " data-aos="fade-up">
+                        <div class="subslider" data-aos="fade-up">
                             <a href="single-standard.html"></a>
                             <div class="entry__text" style="background-image:url('https://i.pinimg.com/originals/4b/fe/fe/4bfefe9b916a322745e8fc170a0e2c4f.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
                                 <div class="entry__header">
@@ -354,6 +354,8 @@
       <!-- column  -->
     </div>	
     </div>
+
+    
 
 <section>
 @endsection
