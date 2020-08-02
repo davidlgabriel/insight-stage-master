@@ -57,6 +57,9 @@
                     <li class="nav-item"><a href="{{ url('/articles') }}" class="nav-link">Articles</a></li>
                     <li class="nav-item"><a href="" class="nav-link">Send us your work</a></li>
                     <li class="nav-item"><a href="" class="nav-link">Teams</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">About us</a></li>
+                    <li class="nav-item"><a href="" class="nav-link"></a></li>
+
                     
                 </ul>
 
