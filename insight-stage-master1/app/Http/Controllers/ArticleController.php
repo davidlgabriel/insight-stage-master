@@ -13,10 +13,15 @@ class ArticleController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function indexadmin()
     {
         $file=Article::all();
         return view('allarticle', compact('file'));
+    }
+    public function indexhome()
+    {
+        $file=Article::all();
+        return view('home', compact('file'));
     }
 
     /**

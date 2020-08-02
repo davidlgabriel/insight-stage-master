@@ -5,13 +5,23 @@
 <section id="slider" style="background-image: url('{{ asset('img/')}}'); background-size:repeat;background-repeat:no-repeat;align-items: center;">
 <div class="top-content">
     <div class="container-fluid">
-        <div>
-        <div id="image">
-            <img src="{{ asset('img/IS23.png')}}" style="align-items: center;" alt="">
-        </div>
-        </div>
 
-        <h1 class="slider-title">TRENDING POSTS</h1>
+        <div class="title" style="padding:30px;">
+        <div class="row">
+            <div class="col-4" style="float:left;">
+            <img src="{{asset('img/lines.png')}}" alt="">
+            </div>
+            <div class="col-4" style="text-align:center; color:black;">
+            <h3>TRENDING ARTICLES</h3>
+            </div>
+             <div class="col-4" >
+             <img src="{{asset('img/lines.png')}}" style="float:right;" alt="">
+            </div>
+        
+        </div>
+        
+        
+    </div>
         <div id="carousel-example" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner row w-100 mx-auto" role="listbox">
                 <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active" >
@@ -109,7 +119,19 @@
 <!--Begin Members-->
 <section id="members" style="background-image: url('{{ asset('img/')}}'); background-size:cover;background-repeat:no-repeat;">
 <div class="container team4" style="margin-right:auto;justify-content:center;margin: auto;">	
-    <h1 class="slider-title">Our Team</h1>						
+<div class="title" style="margin-bottom:10px;">
+        <div class="row">
+            <div class="col-4" style="float:left;">
+            <img src="{{asset('img/lines.png')}}" alt="">
+            </div>
+            <div class="col-4" style="text-align:center; color:black;">
+            <h3>TEAM</h3>
+            </div>
+             <div class="col-4" >
+             <img src="{{asset('img/lines.png')}}" style="float:right;" alt="">
+            </div>
+        
+        </div>						
 	<div class="row" >
       <!-- column  -->
       <div class="col-lg-3 col-md-6 mb-lg-0  mb-4"style="margin:auto;" >

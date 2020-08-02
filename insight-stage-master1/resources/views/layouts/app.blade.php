@@ -16,10 +16,10 @@
     <script defer src="https://friconix.com/cdn/friconix.js"></script>
 
     <!-- Fonts -->
-   
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <!--<link href="https://fonts.googleapis.com/css?family=Raleway:400,800&display=swap&subset=latin-ext" rel="stylesheet">
-
+    
      Styles -->
     <!-- Bootstrap 4.5 CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
