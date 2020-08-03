@@ -6,7 +6,7 @@
 <div class="top-content">
     <div class="container-fluid">
 
-        <div class="title" style="padding:30px;">
+        <div class="title" style="padding-top:30px;">
         <div class="row">
             <div class="col-4" style="float:left;">
             <img src="{{asset('img/lines.png')}}" alt="">

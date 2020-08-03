@@ -21,6 +21,13 @@ class CreateArticlesTable extends Migration
             $table->string('file')->nullabel();
             $table->string('image');
             $table->boolean('verif')->default(false);
+            $table->text('text');
+            $table->string('title');
+            $table->string('theme');
+            $table->string('image1');
+            $table->string('image2');
+            $table->string('image3');
+            $table->string('image4');
             $table->timestamps();
         });
     }

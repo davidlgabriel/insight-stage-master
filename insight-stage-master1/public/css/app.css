@@ -31,7 +31,6 @@ text-decoration:none;
       color: #000000!important;
   }
 
-  .nav-link.active,
   .nav-link:hover{
       color: #E1A042!important;
   }

@@ -14,13 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'PageController@index')->name('home');
-Route::post('/', 'ArticleController@store');
 Route::get('/', 'ArticleController@indexhome');
 
 
 //Article
 Route::get('/article/submit', 'ArticleController@create');
 Route::post('/article', 'ArticleController@store');
+
+
 
 //all
 Route::get('/article', 'ArticleController@indexadmin');

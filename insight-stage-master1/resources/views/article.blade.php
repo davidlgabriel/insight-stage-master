@@ -66,6 +66,7 @@ label{
 }
 </style>
 <section>
+ 
     <div class="title" style="border-bottom:1px solid rgb(247, 247, 247);padding-top:30px;">
         <div class="row">
             <div class="col-4" style="float:right;">
@@ -79,7 +80,11 @@ label{
             </div>
         </div>       
     </div>
-    
+    @if(session('sucess'))
+    <div class="alert alert-success">
+       {{session('sucess')}}
+    </div>
+    @endif
 <div class="container" style="padding-top:20px;">
 <div class="row">
 <div class="col">
@@ -87,15 +92,25 @@ label{
    {{csrf_field()}}
   <div class="form-group">
     <label for="exampleFormControlInput1">Name</label>
-    <input type="text" name="name" class="form-control" placeholder="Alex Pine">
+    <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" placeholder="Alex Pine">
+    @error('name')
+       <span class="invalid-feedback" role="alert">
+          <strong>{{ $message }}</strong>
+        </span>
+    @enderror
   </div>
   <div class="form-group">
     <label for="exampleFormControlInput1">Email</label>
-    <input type="email" name="email" class="form-control" placeholder="example@is.pt">
+    <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" placeholder="example@is.pt">
+    @error('email')
+       <span class="invalid-feedback" role="alert">
+          <strong>{{ $message }}</strong>
+        </span>
+    @enderror
   </div>
   <div class="form-group">
     <label for="exampleFormControlSelect1">Theme of your article</label>
-    <select class="form-control">
+    <select name="theme" class="form-control @error('theme') is-invalid @enderror">
       <option disabled selected>Select Theme</option>
       <option>Scientific</option>
       <option>Quotidian</option>
@@ -103,28 +118,36 @@ label{
       <option>Economic</option>
       <option>Management</option>
     </select>
+    @error('theme')
+       <span class="invalid-feedback" role="alert">
+          <strong>{{ $message }}</strong>
+        </span>
+    @enderror
   </div>
   <div class="form-group">
-  <div id="yourBtn" onclick="getFile()">Click to upload a file</div>
-  <!-- this is your file input tag, so i hide it!-->
-  <!-- i used the onchange event to fire the form submission-->
-  <div style='height: 0px;width: 0px; overflow:hidden;'><input id="upfile" type="file" value="upload" name="file" onchange="sub(this)" /></div>
-  </div>
+      <div id="yourBtn" onclick="getFile()">Click to upload a file</div>
+      <div style='height: 0px;width: 0px; overflow:hidden;'><input id="upfile" classe="@error('file') is-invalid @enderror" type="file" value="upload" name="file" onchange="sub(this)" /></div>
+      @error('file')
+       <span class="invalid-feedback" role="alert">
+          <strong>{{ $message }}</strong>
+        </span>
+      @enderror
+    </div>
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Message</label>
     <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="4"></textarea>
   </div>
+  <div class="g-recaptcha " name="captcha" style="margin-bottom:10px; " data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
   <input type="submit"  class="sub" value="Submit">
 </form>
 </div>
 <div class="col-5">
     <div>
-        <img src="{{asset('img/re.jpg')}}" alt="" style="height:500px; width:450px;">
+        <img src="{{asset('img/re1.png')}}" alt="" style="height:500px; width:450px;">
     </div>
 </div>
 </div>
 </div>
-
 </section>
 
 
