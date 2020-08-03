@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Article;
-use App\Mail\sendemail;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Redirector;
 use Illuminate\Support\Facades\Mail;
@@ -85,8 +84,6 @@ class ArticleController extends Controller
         return redirect('/article/submit')->with('sucess', 'Your article was created successfully! Check your mailbox, please!');
         
     }
-
-    
 
 
 

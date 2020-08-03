@@ -22,18 +22,37 @@ label{
     color:black;
 }
 #yourBtn {
-  font-family: "Open Sans";
-  width: 250px;
-  padding: 10px;
-  -webkit-border-radius: 20px;
-  color: black;
-  font-weight: bold;
-  -moz-border-radius: 20px;
-  border: 1px Solid White;
-  text-align: center;
-  background-color: #E1A042;
-  cursor: pointer;
+    font-family: "Open Sans";
+    width: 200px;
+    margin-top: 10px;
+    position: relative;
+    border-radius: 25px;
+    color: black;
+    background-color:white ;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;  
 }
+#yourBtn:hover{
+    font-family: "Open Sans";
+    width: 200px;
+    margin-top: 10px;
+    position: relative;
+    border-radius: 25px;
+    color: white;
+    background-color:#E1A042 ;
+    border:1px solid #E1A042;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;  
+
+}
+
 .form-control{
     font-size:15px;
   font-family: "Open Sans";
@@ -125,8 +144,8 @@ label{
     @enderror
   </div>
   <div class="form-group">
-      <div id="yourBtn" onclick="getFile()">Click to upload a file</div>
-      <div style='height: 0px;width: 0px; overflow:hidden;'><input id="upfile" classe="@error('file') is-invalid @enderror" type="file" value="upload" name="file" onchange="sub(this)" /></div>
+      <div id="yourBtn"  onclick="getFile()">Click to upload a file</div>
+      <div style='height: 0px;width: 0px; overflow:hidden;'><input id="upfile" classe="button @error('file') is-invalid @enderror" type="file" value="upload" name="file" onchange="sub(this)" /></div>
       @error('file')
        <span class="invalid-feedback" role="alert">
           <strong>{{ $message }}</strong>
@@ -138,7 +157,7 @@ label{
     <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="4"></textarea>
   </div>
   <div class="g-recaptcha " name="captcha" style="margin-bottom:10px; " data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
-  <input type="submit"  class="sub" value="Submit">
+  <input type="submit"  class="button" value="Submit">
 </form>
 </div>
 <div class="col-5">

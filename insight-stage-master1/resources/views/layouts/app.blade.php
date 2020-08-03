@@ -14,6 +14,7 @@
     <script src="{{ asset('js/app.js') }}" defer></script>-->
     
     <script defer src="https://friconix.com/cdn/friconix.js"></script>
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
 
     <!-- Fonts -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">

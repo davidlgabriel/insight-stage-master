@@ -248,38 +248,68 @@ section{
 }
 
 .button {
+    font-family: "Open Sans";
+    width: 200px;
     margin-top: 10px;
     position: relative;
-    border-radius: 12px;
+    border-radius: 25px;
     color: black;
-    background-color:#E1A042 ;
-    border: none;
+    background-color:white ;
+    border: 1px solid black;
     padding: 10px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;  
 }
+.button:hover{
+    font-family: "Open Sans";
+    width: 200px;
+    margin-top: 10px;
+    position: relative;
+    border-radius: 25px;
+    color: white;
+    background-color:#E1A042 ;
+    border:1px solid #E1A042;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;  
+
+}
 
 .card{
     border:1px solid black;
 }
 .card:hover{
-    box-shadow: 0px 0px 10px 0px #E1A042;
+    box-shadow: 0px 0px 10px 0px #cfcfcf;
 }
 .card-body{
     min-height: 150px;
     max-height: 200px;
     padding: 16px 16px 0px 16px;
+    margin:0px;
 }
 .card-img-top{
     min-height: 200px;
     max-height: 200px;
 }
 .card-title{
-    color: #afafaf;
+    font-family: "Open Sans";
+    font-size: 20px;
+    color: #000000;
 }
 .card-title:hover{
     color: #E1A042;
+}
+#autor{
+    font-size:12px;
+    font-family:"Open Sans";
+    padding: px 5px 10px 16px;
+  }
+#date{
+    font-size:12px;
+    letter-spacing: 1px;
 }
 
