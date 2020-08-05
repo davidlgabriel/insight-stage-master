@@ -1,4 +1,88 @@
+/*
 
+Open Sans ------->Letra
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 0px;
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.page-wrapper a:hover {
+    color: #E1A042;
+}
+/* POST SLIDER 
+.post-slider{
+    border: 1px;
+    position: relative;
+}
+
+.post-slider 
+
+.post-slider .next {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.post-slider .prev {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.post-slider .next:hover {
+    color: #E1A042;
+}
+
+.post-slider .prev:hover {
+    color: #E1A042;
+}
+
+.post-slider .post-wrapper{
+    font-family: 'Open Sans', sans-serif;
+    width: 84%;
+    height: auto;
+    margin: 10px auto;
+    overflow: hidden;
+    padding: 10px 0px  10px 0px;
+    border: 1px;
+}
+
+.post-slider .post-wrapper .post {
+    height: auto;
+    width: 300px;
+    margin: 0px 10px;
+    display: inline-block;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 1rem 1rem 1rem -1rem gray;
+}
+
+.post-slider .post-wrapper .post .post-info {
+    text-align: justify;
+    height: auto;
+    border: 1px solid grey;
+    padding: 0px 25px 0px 25px ;
+}
+
+.post-slider .post-wrapper .post .slider-image {
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+*/
 /*
     code by Iatek LLC 2018 - CC 2.0 License - Attribution required
     code customized by Azmind.com
@@ -139,13 +223,16 @@
         visibility: visible;
     }
 }
+#image{
+    text-align: center;
+    margin-bottom: 0px;
+}
 .slider-title {
-    
-    color: #E1A042;
-    line-height: 75px;
-    font-family:"Roboto Slab";
-  
-    
+    font-weight: bold;
+    font-family:'Open Sans';
+    text-align: center;
+    margin: 30px auto;
+    color: #000000;
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
@@ -157,21 +244,38 @@
     border-radius: 100%;
 }
 section{
-    padding-top: 30px;
     padding-bottom: 30px;
 }
 
 .button {
-    margin-top:3%;
-    color: #E1A042;
-    background-color:#ffffff ;
-    border: 2px solid #E1A042;
-    border-radius: 25px; 
-    height: 50px;
-    width:300px;
-    justify-content: center;
+    font-family: "Open Sans";
+    width: 200px;
+    margin-top: 10px;
+    position: relative;
+    border-radius: 25px;
+    color: black;
+    background-color:white ;
+    border: 1px solid black;
+    padding: 10px;
     text-align: center;
-
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;  
+}
+.button:hover{
+    font-family: "Open Sans";
+    width: 200px;
+    margin-top: 10px;
+    position: relative;
+    border-radius: 25px;
+    color: white;
+    background-color:#E1A042 ;
+    border:1px solid #E1A042;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;  
 
 }
 
@@ -179,21 +283,33 @@ section{
     border:1px solid black;
 }
 .card:hover{
-    box-shadow: 0px 0px 10px 0px #E1A042;
+    box-shadow: 0px 0px 10px 0px #cfcfcf;
 }
 .card-body{
     min-height: 150px;
     max-height: 200px;
     padding: 16px 16px 0px 16px;
+    margin:0px;
 }
 .card-img-top{
     min-height: 200px;
     max-height: 200px;
 }
 .card-title{
-    color: #afafaf;
+    font-family: "Open Sans";
+    font-size: 20px;
+    color: #000000;
 }
 .card-title:hover{
     color: #E1A042;
+}
+#autor{
+    font-size:12px;
+    font-family:"Open Sans";
+    padding: px 5px 10px 16px;
+  }
+#date{
+    font-size:12px;
+    letter-spacing: 1px;
 }
 
