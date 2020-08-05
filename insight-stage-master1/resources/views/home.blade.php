@@ -1,141 +1,301 @@
 @extends('layouts.app')
 
 @section('content')
-<!--begin Slider-->
-<section id="slider" style="background-image: url('{{ asset('img/')}}'); background-size:cover;background-repeat:no-repeat;">
+<style>
+  .badge{
+    position: absolute;
+    right:10px;
+    top:10px;
+    background-color:#E1A042;
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    color:black;
+    padding:5px 10px;
+    font-size:15px;
+    font-family:"Open Sans";
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+
+
+</style>
+<section id="slider" style="background-image: url('{{ asset('img/')}}'); background-size:repeat;background-repeat:no-repeat;align-items: center;">
 <div class="top-content">
     <div class="container-fluid">
-        <h1 class="slider-title" style="text-align:center;">Trending Posts</h1>
+
+        <div class="title" style="padding-top:30px; padding-bottom:70px">
+        <div class="row">
+            <div class="col-4" style="float:left;">
+            <img src="{{asset('img/lines.png')}}" alt="">
+            </div>
+            <div class="col-4" style="text-align:center; color:black;">
+            <h3>TRENDING ARTICLES</h3>
+            </div>
+             <div class="col-4" >
+             <img src="{{asset('img/lines.png')}}" style="float:right;" alt="">
+            </div>
+        </div>        
+    </div>
+
         <div id="carousel-example" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner row w-100 mx-auto" role="listbox">
                 <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active" >
-<<<<<<< HEAD
-                <div class="card mb-2">
-                        <img class="card-img-top" src="{{ asset('img/23.jpeg') }}" alt="Card image cap">
+                    <div class="card mb-2">
+                    <a href="#">
+			                <span class="badge badge-warning">Finance</span>
+      		            <img class="card-img-top" src="{{ asset('img/23.jpeg') }}" alt="Card image cap">
+		                </a>
                             <div class="card-body">
-                            <a class="card-title font-weight-bold" href=""><h5 class="card-title font-weight-bold">Ciência de dados: Ferramentas para o combate à Covid-19</h5></a>                          
-=======
-                 <div class="cardlike">
-                    <div class="slider">
-                        <div class="subslider" data-aos="fade-up">
-                            <a href="single-standard.html"></a>
-                            <div class="entry__text" style="background-image:url('https://images.adsttc.com/media/images/589b/018a/e58e/ce4e/a300/01b5/newsletter/AS5A3100.jpg?1486553475');background-position: center;background-repeat: no-repeat;background-size: cover;">
-                                <div class="entry__header">
-                                    <h1 class="entry__title" style="font-family:'Faustina';font-size:130%;margin-right:5%" ><p class="branco">Atirei um pau ao gato,mas o gato não morreu, dona chica assustou-se.</p></h1>
+                                <a class="card-title font-weight-bold" style="text-align= center;margin:none;" href=""><h5 class="card-title font-weight-bold">Ciência de dados: Ferramentas para o combate à Covid-19</h5></a>
+                                <div class="row" >
+                                  <div class="col-7 nopadding" style="padding:none">
+                                    <span class="mdi mdi-account"></span>
+                                    <span id="autor">David Gabriel</span>
+                                  </div>
+                                  <div class="col-5 nopadding">
+                                     <span class="mdi mdi-calendar-month"></span>
+                                      <span id="date" >12|08|20</span>
                                 </div>
->>>>>>> e002be4be8a72e176f489cdf47a0146c04747eb7
-                            </div>
-                            <div class="row">
-                                  <div class="entry__date" style="font-family:'Faustina';margin-top:-17%;margin-left:10%;"> 
-                                       <p class="branco" > 10 | 12 | 2017</p>
-                                  </div>
-                                  <div class="entry__excerpt" style="font-family:'Faustina';margin-top:-13.5%;margin-left:50%;">
-                                       <p class="branco">
-                                            Miguel Guilherme
-                                      </p>
-                                  </div>
-                            </div>
-                        </div> 
-                    </div>
-                </div><!-- end cardlike -->
-              </div>
-              <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 " >
-                 <div class="cardlike">
-                    <div class="slider">
-                        <div class="subslider " data-aos="fade-up">
-                            <a href="single-standard.html"></a>
-                            <div class="entry__text" style="background-image:url('https://s2.best-wallpaper.net/wallpaper/iphone/1807/Robot-humanoid-head-high-tech_iphone_1080x1920.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
-                                 <div class="entry__header">
-                                    <h1 class="entry__title" style="font-family:'Faustina';font-size:130%;margin-right:5%" ><p class="branco">Atirei um pau ao gato,mas o gato não morreu, dona chica assustou-se.</p></h1>
                                 </div>
-                            </div>
-                            <div class="row">
-                                  <div class="entry__date" style="font-family:'Faustina';margin-top:-17%;margin-left:10%;"> 
-                                       <p class="branco" > 10 | 12 | 2017</p>
-                                  </div>
-                                  <div class="entry__excerpt" style="font-family:'Faustina';margin-top:-13.5%;margin-left:50%;">
-                                       <p class="branco">
-                                            Miguel Guilherme
-                                      </p>
-                                  </div>
-                            </div>
-                        </div> 
+                                
+
+                              </div>
                     </div>
-                </div><!-- end cardlike -->
-              </div>
-              <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 " >
-                 <div class="cardlike">
-                    <div class="slider">
-                        <div class="subslider " data-aos="fade-up">
-                            <a href="single-standard.html"></a>      
-                            <div class="entry__text" style="background-image:url('https://i.pinimg.com/736x/ea/1d/6d/ea1d6d4597e962154564dd22e5b9c087.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
-                               <div class="entry__header">                    
-                                    <h1 class="entry__title" style="font-family:'Faustina';font-size:130%;margin-right:5%" ><p class="branco">Atirei um pau ao gato,mas o gato não morreu, dona chica assustou-se.</p></h1>
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-2">
+                    <a href="#">
+			                <span class="badge badge-warning">Finance</span>
+      		            <img class="card-img-top" src="{{ asset('img/23.jpeg') }}" alt="Card image cap">
+		                </a>
+                            <div class="card-body">
+                                <a class="card-title font-weight-bold" style="text-align= center;margin:none;" href=""><h5 class="card-title font-weight-bold">Ciência de dados: Ferramentas para o combate à Covid-19</h5></a>
+                                <div class="row" >
+                                  <div class="col-7 nopadding" style="padding:none">
+                                    <span class="mdi mdi-account"></span>
+                                    <span id="autor">David Gabriel</span>
+                                  </div>
+                                  <div class="col-5 nopadding">
+                                     <span class="mdi mdi-calendar-month"></span>
+                                      <span id="date" >12|08|20</span>
                                 </div>
-                            </div>
-                            <div class="row">
-                                  <div class="entry__date" style="font-family:'Faustina';margin-top:-17%;margin-left:10%;"> 
-                                       <p class="branco" > 10 | 12 | 2017</p>
-                                  </div>
-                                  <div class="entry__excerpt" style="font-family:'Faustina';margin-top:-13.5%;margin-left:50%;">
-                                       <p class="branco">
-                                            Miguel Guilherme
-                                      </p>
-                                  </div>
-                            </div>
-                        </div> 
-                    </div>
-                </div><!-- end cardlike -->
-              </div>
-              <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 " >
-                 <div class="cardlike">
-                    <div class="slider">
-                        <div class="subslider " data-aos="fade-up">
-                            <a href="single-standard.html"></a>
-                            <div class="entry__text" style="background-image:url('https://uploads-ssl.webflow.com/5a6aeaa5f9957b0001b66bf0/5b1e9075a2471591b0d50ddc_sossusvlei_2.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
-                                <div class="entry__header">
-                                    <h1 class="entry__title" style="font-family:'Faustina';font-size:130%;margin-right:5%" ><p class="branco">Atirei um pau ao gato,mas o gato não morreu, dona chica assustou-se.</p></h1>
                                 </div>
-                            </div>
-                            <div class="row">
-                                  <div class="entry__date" style="font-family:'Faustina';margin-top:-17%;margin-left:10%;"> 
-                                       <p class="branco" > 10 | 12 | 2017</p>
-                                  </div>
-                                  <div class="entry__excerpt" style="font-family:'Faustina';margin-top:-13.5%;margin-left:50%;">
-                                       <p class="branco">
-                                            Miguel Guilherme
-                                      </p>
-                                  </div>
-                            </div>
-                        </div> 
+                                
+
+                              </div>
                     </div>
-                </div><!-- end cardlike -->
-              </div>
-              <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 " >
-                 <div class="cardlike">
-                    <div class="slider">
-                        <div class="subslider" data-aos="fade-up">
-                            <a href="single-standard.html"></a>
-                            <div class="entry__text" style="background-image:url('https://i.pinimg.com/originals/4b/fe/fe/4bfefe9b916a322745e8fc170a0e2c4f.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
-                                <div class="entry__header">
-                                    <h1 class="entry__title" style="font-family:'Faustina';font-size:130%;margin-right:5%" ><p class="branco">Atirei um pau ao gato,mas o gato não morreu, dona chica assustou-se.</p></h1>
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-2">
+                    <a href="#">
+			                <span class="badge badge-warning">Finance</span>
+      		            <img class="card-img-top" src="{{ asset('img/23.jpeg') }}" alt="Card image cap">
+		                </a>
+                            <div class="card-body">
+                                <a class="card-title font-weight-bold" style="text-align= center;margin:none;" href=""><h5 class="card-title font-weight-bold">Ciência de dados: Ferramentas para o combate à Covid-19</h5></a>
+                                <div class="row" >
+                                  <div class="col-7 nopadding" style="padding:none">
+                                    <span class="mdi mdi-account"></span>
+                                    <span id="autor">David Gabriel</span>
+                                  </div>
+                                  <div class="col-5 nopadding">
+                                     <span class="mdi mdi-calendar-month"></span>
+                                      <span id="date" >12|08|20</span>
                                 </div>
-                            </div>
-                            <div class="row">
-                                  <div class="entry__date" style="font-family:'Faustina';margin-top:-17%;margin-left:10%;"> 
-                                       <p class="branco" > 10 | 12 | 2017</p>
-                                  </div>
-                                  <div class="entry__excerpt" style="font-family:'Faustina';margin-top:-13.5%;margin-left:50%;">
-                                       <p class="branco">
-                                            Miguel Guilherme
-                                      </p>
-                                  </div>
-                            </div>
-                        </div> 
+                                </div>
+                                
+
+                              </div>
                     </div>
-                </div><!-- end cardlike -->
-              </div>
-            </div>
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-2">
+                    <a href="#">
+			                <span class="badge badge-warning">Finance</span>
+      		            <img class="card-img-top" src="{{ asset('img/23.jpeg') }}" alt="Card image cap">
+		                </a>
+                            <div class="card-body">
+                                <a class="card-title font-weight-bold" style="text-align= center;margin:none;" href=""><h5 class="card-title font-weight-bold">Ciência de dados: Ferramentas para o combate à Covid-19</h5></a>
+                                <div class="row" >
+                                  <div class="col-7 nopadding" style="padding:none">
+                                    <span class="mdi mdi-account"></span>
+                                    <span id="autor">David Gabriel</span>
+                                  </div>
+                                  <div class="col-5 nopadding">
+                                     <span class="mdi mdi-calendar-month"></span>
+                                      <span id="date" >12|08|20</span>
+                                </div>
+                                </div>
+                                
+
+                              </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-2">
+                    <a href="#">
+			                <span class="badge badge-warning">Finance</span>
+      		            <img class="card-img-top" src="{{ asset('img/23.jpeg') }}" alt="Card image cap">
+		                </a>
+                            <div class="card-body">
+                                <a class="card-title font-weight-bold" style="text-align= center;margin:none;" href=""><h5 class="card-title font-weight-bold">Ciência de dados: Ferramentas para o combate à Covid-19</h5></a>
+                                <div class="row" >
+                                  <div class="col-7 nopadding" style="padding:none">
+                                    <span class="mdi mdi-account"></span>
+                                    <span id="autor">David Gabriel</span>
+                                  </div>
+                                  <div class="col-5 nopadding">
+                                     <span class="mdi mdi-calendar-month"></span>
+                                      <span id="date" >12|08|20</span>
+                                </div>
+                                </div>
+                                
+
+                              </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-2">
+                    <a href="#">
+			                <span class="badge badge-warning">Finance</span>
+      		            <img class="card-img-top" src="{{ asset('img/23.jpeg') }}" alt="Card image cap">
+		                </a>
+                            <div class="card-body">
+                                <a class="card-title font-weight-bold" style="text-align= center;margin:none;" href=""><h5 class="card-title font-weight-bold">Ciência de dados: Ferramentas para o combate à Covid-19</h5></a>
+                                <div class="row" >
+                                  <div class="col-7 nopadding" style="padding:none">
+                                    <span class="mdi mdi-account"></span>
+                                    <span id="autor">David Gabriel</span>
+                                  </div>
+                                  <div class="col-5 nopadding">
+                                     <span class="mdi mdi-calendar-month"></span>
+                                      <span id="date" >12|08|20</span>
+                                </div>
+                                </div>
+                                
+
+                              </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-2">
+                    <a href="#">
+			                <span class="badge badge-warning">Finance</span>
+      		            <img class="card-img-top" src="{{ asset('img/23.jpeg') }}" alt="Card image cap">
+		                </a>
+                            <div class="card-body">
+                                <a class="card-title font-weight-bold" style="text-align= center;margin:none;" href=""><h5 class="card-title font-weight-bold">Ciência de dados: Ferramentas para o combate à Covid-19</h5></a>
+                                <div class="row" >
+                                  <div class="col-7 nopadding" style="padding:none">
+                                    <span class="mdi mdi-account"></span>
+                                    <span id="autor">David Gabriel</span>
+                                  </div>
+                                  <div class="col-5 nopadding">
+                                     <span class="mdi mdi-calendar-month"></span>
+                                      <span id="date" >12|08|20</span>
+                                </div>
+                                </div>
+                                
+
+                              </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-2">
+                    <a href="#">
+			                <span class="badge badge-warning">Finance</span>
+      		            <img class="card-img-top" src="{{ asset('img/23.jpeg') }}" alt="Card image cap">
+		                </a>
+                            <div class="card-body">
+                                <a class="card-title font-weight-bold" style="text-align= center;margin:none;" href=""><h5 class="card-title font-weight-bold">Ciência de dados: Ferramentas para o combate à Covid-19</h5></a>
+                                <div class="row" >
+                                  <div class="col-7 nopadding" style="padding:none">
+                                    <span class="mdi mdi-account"></span>
+                                    <span id="autor">David Gabriel</span>
+                                  </div>
+                                  <div class="col-5 nopadding">
+                                     <span class="mdi mdi-calendar-month"></span>
+                                      <span id="date" >12|08|20</span>
+                                </div>
+                                </div>
+                                
+
+                              </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-2">
+                    <a href="#">
+			                <span class="badge badge-warning">Finance</span>
+      		            <img class="card-img-top" src="{{ asset('img/23.jpeg') }}" alt="Card image cap">
+		                </a>
+                            <div class="card-body">
+                                <a class="card-title font-weight-bold" style="text-align= center;margin:none;" href=""><h5 class="card-title font-weight-bold">Ciência de dados: Ferramentas para o combate à Covid-19</h5></a>
+                                <div class="row" >
+                                  <div class="col-7 nopadding" style="padding:none">
+                                    <span class="mdi mdi-account"></span>
+                                    <span id="autor">David Gabriel</span>
+                                  </div>
+                                  <div class="col-5 nopadding">
+                                     <span class="mdi mdi-calendar-month"></span>
+                                      <span id="date" >12|08|20</span>
+                                </div>
+                                </div>
+                                
+
+                              </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-2">
+                    <a href="#">
+			                <span class="badge badge-warning">Finance</span>
+      		            <img class="card-img-top" src="{{ asset('img/23.jpeg') }}" alt="Card image cap">
+		                </a>
+                            <div class="card-body">
+                                <a class="card-title font-weight-bold" style="text-align= center;margin:none;" href=""><h5 class="card-title font-weight-bold">Ciência de dados: Ferramentas para o combate à Covid-19</h5></a>
+                                <div class="row" >
+                                  <div class="col-7 nopadding" >
+                                    <span class="mdi mdi-account"></span>
+                                    <span id="autor">David Gabriel</span>
+                                  </div>
+                                  <div class="col-5 nopadding">
+                                     <span class="mdi mdi-calendar-month"></span>
+                                      <span id="date" >12|08|20</span>
+                                </div>
+                                </div>
+                                
+
+                              </div>
+                    </div>
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-2">
+                    <a href="#">
+			                <span class="badge badge-warning">Finance</span>
+      		            <img class="card-img-top" src="{{ asset('img/23.jpeg') }}" alt="Card image cap">
+		                </a>
+                            <div class="card-body">
+                                <a class="card-title font-weight-bold" style="text-align= center;margin:none;" href=""><h5 class="card-title font-weight-bold">Ciência de dados: Ferramentas para o combate à Covid-19</h5></a>
+                                <div class="row" >
+                                  <div class="col-7 nopadding" >
+                                    <span class="mdi mdi-account"></span>
+                                    <span id="autor">David Gabriel</span>
+                                  </div>
+                                  <div class="col-5 nopadding">
+                                     <span class="mdi mdi-calendar-month"></span>
+                                      <span id="date" >12|08|20</span>
+                                </div>
+                                </div>
+                                
+
+                              </div>
+                    </div>
+                </div>
             <a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
@@ -147,19 +307,28 @@
         </div>        
     </div>
 </div>
-<div class="vertical-center" style="text-align: center;">
-  <button class="button">Ver Mais</button>
+<div class="vertical-center" style="text-align: center;margin-top:30px;margin-bottom:30px;">
+  <button class="button button4 font-weight-bold">Ver Mais</button>
 </div>
 
 </section>
-<!--End Slider-->
-
-<!------------------------------------------------>
 
 <!--Begin Members-->
 <section id="members" style="background-image: url('{{ asset('img/')}}'); background-size:cover;background-repeat:no-repeat;">
 <div class="container team4" style="margin-right:auto;justify-content:center;margin: auto;">	
-    <h1 class="slider-title">Our Team</h1>						
+<div class="title" >
+        <div class="row" style="style=padding-top:30px; padding-bottom:30px">
+            <div class="col-4" style="float:left;">
+            <img src="{{asset('img/lines.png')}}" alt="">
+            </div>
+            <div class="col-4" style="text-align:center; color:black;">
+            <h3>TEAM</h3>
+            </div>
+             <div class="col-4" >
+             <img src="{{asset('img/lines.png')}}" style="float:right;" alt="">
+            </div>
+        
+        </div>						
 	<div class="row" >
       <!-- column  -->
       <div class="col-lg-3 col-md-6 mb-lg-0  mb-4"style="margin:auto;" >
@@ -298,7 +467,7 @@
               <h5 class="mt-4 font-weight-medium mb-0" >Carlos Sainz</h5>
               <h6 class="subtitle mb-3">McLaren-Renault</h6>
               <ul class="list-inline">
-              <li class="list-inline-item"><a href="#" claYss="text-decoration-none d-block px-1" title="Linkedin" style="line-height:12px;"><i class="icon-social-linkedin"></i></a></li>
+              <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Linkedin" style="line-height:12px;"><i class="icon-social-linkedin"></i></a></li>
                 <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Facebook"><i class="icon-social-facebook"></i></a></li>
                 <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Twitter"><i class="icon-social-twitter"></i></a></li>
                 <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Instagram"><i class="icon-social-instagram"></i></a></li>
@@ -366,5 +535,3 @@
 
 <section>
 @endsection
-
-
