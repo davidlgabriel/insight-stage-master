@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Article;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Redirector;
+use Illuminate\Support\Facades\Mail;
 
 class ArticleController extends Controller
 {
@@ -13,11 +15,15 @@ class ArticleController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-
-    public function index()
+    public function indexadmin()
     {
         $file=Article::all();
         return view('allarticle', compact('file'));
+    }
+    public function indexhome()
+    {
+        $file=Article::all();
+        return view('home', compact('file'));
     }
 
     /**
@@ -38,13 +44,20 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate($request, [
+            "name" => "required|min:5",
+            "email" => "required",
+            "theme" => "required",
+            "file" => "required|file|max:300"
+        ]);
         $data=new Article;
         if($request->message == null){
             $data->message="";
         }
         $data->name=$request->name;
         $data->email=$request->email;
-        if($request->message != null){
+        $data->theme=$request->theme;
+        if($request->message != null ){
         $data->message=$request->message;
         }
         if ($request->file('file')) {
@@ -55,10 +68,24 @@ class ArticleController extends Controller
             
             $data->file= $filename;
         }
+        $data->title="";
+        $data->text="";
+        $data->title="";
         $data->image="";
-        $data->save();
-        return redirect()->back();
+        $data->image1="";
+        $data->image2="";
+        $data->image3="";
+        $data->image4="";
+        $token = $request->input('g-recaptcha-response');
+        if($token){
+            $data->save();
+        }
+
+        return redirect('/article/submit')->with('sucess', 'Your article was created successfully! Check your mailbox, please!');
+        
     }
+
+
 
     /**
      * Display the specified resource.
@@ -110,6 +137,4 @@ class ArticleController extends Controller
     {
         //
     }
-
-    
 }

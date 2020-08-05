@@ -28,3 +28,7 @@ Route::post('/article', 'ArticleController@store');
 Route::get('/article', 'ArticleController@index');
 Route::get('/article/all/{id}','ArticleController@show');
 Route::get('/article/download/{file}','ArticleController@download');
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
