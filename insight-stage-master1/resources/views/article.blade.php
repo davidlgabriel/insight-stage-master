@@ -1,72 +1,173 @@
 @extends('layouts.app')
 
 @section('content')
+<script>
+    function getFile() {
+  document.getElementById("upfile").click();
+}
 
+function sub(obj) {
+  var file = obj.value;
+  var fileName = file.split("\\");
+  document.getElementById("yourBtn").innerHTML = fileName[fileName.length - 1];
+  document.myForm.submit();
+  event.preventDefault();
+}
+</script>
+<style>
+input[type="submit"] {
+    
+}
+label{
+    color:black;
+}
+#yourBtn {
+    font-family: "Open Sans";
+    width: 200px;
+    margin-top: 10px;
+    position: relative;
+    border-radius: 25px;
+    color: black;
+    background-color:white ;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;  
+}
+#yourBtn:hover{
+    font-family: "Open Sans";
+    width: 200px;
+    margin-top: 10px;
+    position: relative;
+    border-radius: 25px;
+    color: white;
+    background-color:#E1A042 ;
+    border:1px solid #E1A042;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;  
 
-<section class="submit" >
-    <div class="container">
-        <div class="title" >
-            <div style="margin-bottom:6%;margin-right:10%;">
-             <h1> Submit your Article </h1>
+}
+
+.form-control{
+    font-size:15px;
+  font-family: "Open Sans";
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border: 1px solid black;
+  text-align: left;
+  background-color: white;
+}
+.form-control:focus {
+   box-shadow:none;
+   border:1px solid #E1A042
+}
+.title{
+    text-align:center;
+}
+.col-4{
+    text-align:center;
+}
+.sub{
+    font-family: "Open Sans";
+    width: 150px;
+    -webkit-border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    -moz-border-radius: 20px;
+    border: 1px Solid black;
+    text-align: center;
+    background-color: white;
+}
+</style>
+<section>
+ 
+    <div class="title" style="border-bottom:1px solid rgb(247, 247, 247);padding-top:30px;">
+        <div class="row">
+            <div class="col-4" style="float:right;">
+            <img src="{{asset('img/lines.png')}}" alt="">
             </div>
-        <div>
-        
-        <div class="form">
-            <form action="/article" method="POST" enctype="multipart/form-data">
-                {{csrf_field()}}
-              
-                
-                    
-                    <div class="sub" style="margin-right:10%;">
-                        
-                        <div class="form-group" >
-                            <label for="exampleInputEmail1" style="line-height:20px;">Name</label>
-                        </div>
-
-                        <div class="form-group clor" style="margin-bottom:5%;">
-                            <input type="text" name="name"  required>
-                        </div>
-                  
-                        <div class="form-group" >
-                            <label for="exampleInputEmail1">Email address</label>
-                        </div>
-
-                        <div class="form-group">
-                            <input type="text" name="email" required>
-                        </div>
-                        
-                        </div>
-                        <div class="form-group" style="margin-top:10%;margin-right:10%;">
-                            <label for="exampleInputEmail1">Message</label>
-                        </div>
-
-                        <div class="" style="margin-right:10%;">
-                            <textarea type="text" class="messaging" name="message" value="" style="width:50%;text-align:left;"></textarea>
-                        
-                        </div>
-                        
-                
-
-                        <div class="form-group" style="margin-right:10%;">
-                            <label class="file" style="margin-top:5%";>
-                            <input type="file"  name="file" required>
-                            Add a file
-                            </label>
-                        </div>
-
-                        <div class="submit" style="line-height:200%;margin-right:10%;">
-                            <input type="submit" value="Submit">
-                        </div>
-
-              
-                  
-                
-            </form>
-        
-        </div>
+            <div class="col-4" style="font-family: 'Open Sans'; color:black;">
+            <h3 style="font-weight: bold;">Submit</h3>
+            </div>
+             <div class="col-4" style="float:left;">
+             <img src="{{asset('img/lines.png')}}" alt="">
+            </div>
+        </div>       
     </div>
+    @if(session('sucess'))
+    <div class="alert alert-success">
+       {{session('sucess')}}
+    </div>
+    @endif
+<div class="container" style="padding-top:20px;">
+<div class="row">
+<div class="col">
+<form action="/article" method="POST" enctype="multipart/form-data">
+   {{csrf_field()}}
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Name</label>
+    <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" placeholder="Alex Pine">
+    @error('name')
+       <span class="invalid-feedback" role="alert">
+          <strong>{{ $message }}</strong>
+        </span>
+    @enderror
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Email</label>
+    <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" placeholder="example@is.pt">
+    @error('email')
+       <span class="invalid-feedback" role="alert">
+          <strong>{{ $message }}</strong>
+        </span>
+    @enderror
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Theme of your article</label>
+    <select name="theme" class="form-control @error('theme') is-invalid @enderror">
+      <option disabled selected>Select Theme</option>
+      <option>Scientific</option>
+      <option>Quotidian</option>
+      <option>Math</option>
+      <option>Economic</option>
+      <option>Management</option>
+    </select>
+    @error('theme')
+       <span class="invalid-feedback" role="alert">
+          <strong>{{ $message }}</strong>
+        </span>
+    @enderror
+  </div>
+  <div class="form-group">
+      <div id="yourBtn"  onclick="getFile()">Click to upload a file</div>
+      <div style='height: 0px;width: 0px; overflow:hidden;'><input id="upfile" classe="button @error('file') is-invalid @enderror" type="file" value="upload" name="file" onchange="sub(this)" /></div>
+      @error('file')
+       <span class="invalid-feedback" role="alert">
+          <strong>{{ $message }}</strong>
+        </span>
+      @enderror
+    </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Message</label>
+    <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="4"></textarea>
+  </div>
+  <div class="g-recaptcha " name="captcha" style="margin-bottom:10px; " data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+  <input type="submit"  class="button" value="Submit">
+</form>
+</div>
+<div class="col-5">
+    <div>
+        <img src="{{asset('img/re1.png')}}" alt="" style="height:500px; width:450px;">
+    </div>
+</div>
+</div>
+</div>
 </section>
 
 
 @endsection
-

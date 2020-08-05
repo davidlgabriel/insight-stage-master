@@ -10,36 +10,30 @@
 
     <title>IS</title>
 
-    <!-- Icons -->
-
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
-
     <!-- Scripts 
     <script src="{{ asset('js/app.js') }}" defer></script>-->
     
     <script defer src="https://friconix.com/cdn/friconix.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
-					
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+
     <!-- Fonts -->
-   
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <!--<link href="https://fonts.googleapis.com/css?family=Raleway:400,800&display=swap&subset=latin-ext" rel="stylesheet">
-
+    
      Styles -->
     <!-- Bootstrap 4.5 CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Google Fonts -->
     <link rel="shortcut icon" href="{{ asset('img/IS.png') }}">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Faustina:500">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:700">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Slab:400">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/slider.css') }}" rel="stylesheet">
     <link href="{{ asset('css/hamburgers.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/members.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/articles.css') }}" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
     
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 </head>
@@ -53,13 +47,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="{{ url('/') }}" class="nav-link active">Home</a></li>
-                    <li class="nav-item"><a href="{{ url('/articles') }}" class="nav-link">Articles</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Send us your work</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Teams</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">About us</a></li>
-                    <li class="nav-item"><a href="" class="nav-link"></a></li>
-
+                    <li class="nav-item hvr-grow hvr-underline-from-center"><a href="{{ url('/') }}" class="nav-link active">Home</a></li>
+                    <li class="nav-item hvr-grow hvr-underline-from-center"><a href="" class="nav-link">Articles</a></li>
+                    <li class="nav-item hvr-grow hvr-underline-from-center"><a href="{{ url('/article/submit') }}" class="nav-link">Send us your work</a></li>
+                    <li class="nav-item hvr-grow hvr-underline-from-center"><a href="" class="nav-link">Teams</a></li>
                     
                 </ul>
 
@@ -103,6 +94,13 @@
                 $('footer').removeClass('fixed-bottom');
             }
         });
+    </script>
+
+    <script>
+       $( '#app .navbar-nav a' ).on( 'click', function () {
+        	$( '#app .navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
+	        $( this ).parent( 'li' ).addClass( 'active' );
+});
     </script>
     <script>
         var hamburger = document.querySelector(".hamburger");
