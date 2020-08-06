@@ -35,7 +35,7 @@
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     
     
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <!--<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />-->
 </head>
 <body>
 <div id="app">
@@ -49,8 +49,10 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item hvr-grow hvr-underline-from-center"><a href="{{ url('/') }}" class="nav-link active">Home</a></li>
                     <li class="nav-item hvr-grow hvr-underline-from-center"><a href="" class="nav-link">Articles</a></li>
-                    <li class="nav-item hvr-grow hvr-underline-from-center"><a href="{{ url('/article/submit') }}" class="nav-link">Send us your work</a></li>
                     <li class="nav-item hvr-grow hvr-underline-from-center"><a href="" class="nav-link">Teams</a></li>
+                    <li class="nav-item hvr-grow hvr-underline-from-center"><a href="" class="nav-link">About Us</a></li>
+                    <!--FAZER Botão Submeter-->
+                    <li class="nav-item hvr-grow hvr-underline-from-center"><a href="{{ url('/article/submit') }}" class="nav-link">Send us your work</a></li>
                     
                 </ul>
 
