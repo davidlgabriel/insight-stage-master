@@ -14,21 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'PageController@index')->name('home');
-
-//ArticlesPage
-Route::get('/articles','PageController@articles')->name('articles');
- 
+Route::post('/', 'ArticleController@store');
+Route::get('/', 'ArticleController@indexhome');
 
 
 //Article
 Route::get('/article/submit', 'ArticleController@create');
 Route::post('/article', 'ArticleController@store');
 
+
 //all
-Route::get('/article', 'ArticleController@index');
+Route::get('/article', 'ArticleController@indexadmin');
 Route::get('/article/all/{id}','ArticleController@show');
 Route::get('/article/download/{file}','ArticleController@download');
-
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
-});
