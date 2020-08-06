@@ -27,4 +27,14 @@ class PageController extends Controller
     {
         return view('home');
     }
+
+     /**
+     * Return the articles page.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function articles()
+    {
+        return view('articlespage');
+    }
 }

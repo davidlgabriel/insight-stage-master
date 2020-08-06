@@ -19,7 +19,7 @@ text-decoration:none;
       font-size: .9rem;
       font-weight: 600;
       letter-spacing: .1rem;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: "Open Sans";
       box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .2);
       z-index: 1;
   }
@@ -28,10 +28,9 @@ text-decoration:none;
       text-align: center;
   }
   .nav-link{
-      color: #E1A042!important;
+      color: #000000!important;
   }
 
-  .nav-link.active,
   .nav-link:hover{
       color: #E1A042!important;
   }
@@ -139,3 +138,53 @@ text-decoration:none;
     transform: translateZ(0);
     will-change: transform;
   }
+
+  /*MEMBERS**/
+  @import url(//fonts.googleapis.com/css?family=Montserrat:300,500);
+.team4 {
+  font-family: sans-serif;
+	color: #8d97ad;
+  font-weight: 300;
+  justify-content:center;
+}
+
+.team4 h2, .team4 h3, .team4 h4, .team4 h5, .team4 h6 {
+  color: #3e4555;
+}
+.team4 .font-weight-medium {
+   font-family: "Coves";
+   font-weight: 40px;
+   line-height: 22px;
+   
+}
+
+.team4 h5 {
+    line-height: 22px;
+    font-size: 18px;
+}
+
+.team4 .subtitle {
+    color: #8d97ad;
+    line-height: 24px;
+		font-size: 13px;
+}
+
+.team4 ul li a {
+  color: #acacac;
+  padding-right: 15px;
+  line-height: 22px;
+  -webkit-transition: 0.1s ease-in;
+  -o-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+}
+
+.team4 ul li a:hover {
+  -webkit-transform: translate3d(0px, -5px, 0px);
+  transform: translate3d(0px, -5px, 0px);
+	color: #f8dd42;
+}
+.slider-title {
+  text-align: center;
+  margin: 30px auto;
+  color: #E1A042;
+}
