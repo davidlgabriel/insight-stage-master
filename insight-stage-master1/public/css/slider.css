@@ -246,11 +246,41 @@ a{
 section{
     padding-bottom: 30px;
 }
+.button1 {
+    font-family: "Open Sans";
+    width: 180px;
+    position: relative;
+    border-radius: 25px;
+    color: black;
+    background-color:white ;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;  
+}
+.button1:hover{
+    font-family: "Open Sans";
+    width: 180px;
+    position: relative;
+    border-radius: 25px;
+    color: white;
+    background-color:#E1A042;
+    border: 1px solid #E1A042;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;  
+
+}
+
 
 .button {
     font-family: "Open Sans";
     width: 200px;
-    margin-top: 10px;
+    margin-top: 10px;;
     position: relative;
     border-radius: 25px;
     color: black;

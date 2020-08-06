@@ -84,7 +84,7 @@ class ArticleController extends Controller
             $data->save();
         }
 
-        return redirect('/article/submit')->with('sucess', 'Your article was created successfully! Check your mailbox, please!');
+        return redirect('/article/submit')->with('sucess', 'Your article was created successfully!');
         
     }
 
