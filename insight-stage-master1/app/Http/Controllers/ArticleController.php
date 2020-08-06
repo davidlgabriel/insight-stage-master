@@ -69,7 +69,10 @@ class ArticleController extends Controller
             $data->file= $filename;
         }
         $data->title="";
-        $data->text="";
+        $data->descricao="";
+        $data->introdution="";
+        $data->Desenvolvimento="";
+        $data->Conclusão="";
         $data->title="";
         $data->image="";
         $data->image1="";
