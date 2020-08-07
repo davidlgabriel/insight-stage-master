@@ -343,11 +343,6 @@
               <h6 class="subtitle mb-3">Mercedes-AMG-Petronas</h6>
               <ul class="list-inline">
               <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Linkedin" style="line-height:12px;"><i class="icon-social-linkedin"></i></a></li>
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Facebook"><i class="icon-social-facebook"></i></a></li>
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Twitter"><i class="icon-social-twitter"></i></a></li>
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="Instagram"><i class="icon-social-instagram"></i></a></li>
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1" title="GitHub"><i class="icon-social-github"></i></a></li>
-               
               </ul>
             </div>
           </div>
