@@ -23,7 +23,7 @@
     
      Styles -->
     <!-- Bootstrap 4.5 CSS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <!-- Google Fonts -->
     <link rel="shortcut icon" href="{{ asset('img/IS.png') }}">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
@@ -48,7 +48,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item hvr-grow hvr-underline-from-center"><a href="{{ url('/') }}" class="nav-link active">Home</a></li>
-                    <li class="nav-item hvr-grow hvr-underline-from-center"><a href="" class="nav-link">Articles</a></li>
+                    <li class="nav-item hvr-grow hvr-underline-from-center"><a href="{{ url('/article/') }}" class="nav-link">Articles</a></li>
                     <li class="nav-item hvr-grow hvr-underline-from-center"><a href="" class="nav-link">Teams</a></li>
                     <li class="nav-item hvr-grow hvr-underline-from-center"><a href="" class="nav-link">About Us</a></li>
                     <div class="nav-item hvr-grow hvr-underline-from-center">

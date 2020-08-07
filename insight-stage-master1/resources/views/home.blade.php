@@ -308,7 +308,7 @@
     </div>
 </div>
 <div class="vertical-center" style="text-align: center;margin-top:30px;margin-bottom:30px;">
-  <button class="button button4 font-weight-bold">Ver Mais</button>
+  <button onclick="window.location.href='/article'" class="button button4 font-weight-bold">Ver Mais</button>
 </div>
 
 </section>
