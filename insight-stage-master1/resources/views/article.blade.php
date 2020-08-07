@@ -83,6 +83,16 @@ label{
     text-align: center;
     background-color: white;
 }
+/******
+
+.view{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+ ************/
 </style>
 <section>
  
@@ -131,11 +141,17 @@ label{
     <label for="exampleFormControlSelect1">Theme of your article</label>
     <select name="theme" class="form-control @error('theme') is-invalid @enderror">
       <option disabled selected>Select Theme</option>
-      <option>Scientific</option>
-      <option>Quotidian</option>
-      <option>Math</option>
-      <option>Economic</option>
-      <option>Management</option>
+      <option>Finance</option>
+      <option>National and International Finance</option>
+      <option>Financial Markets</option>
+      <option>Economic and financial history</option>
+      <option>State finances and social concerns</option>
+      <option>Economy</option>
+      <option>National and International Politics</option>
+      <option>Economic Sustainability</option>
+      <option>Environmental Sustainability</option>
+      <option>State finances and social concerns</option>
+      <option>Bolsa de valores</option>
     </select>
     @error('theme')
        <span class="invalid-feedback" role="alert">
@@ -162,7 +178,8 @@ label{
 </div>
 <div class="col-5">
     <div>
-        <img src="{{asset('img/re1.png')}}" alt="" style="height:500px; width:450px;">
+        <img src="{{asset('img/regras.png')}}" alt="" style="height:500px; width:450px;">
+        <input type="submit"  class="button view" value="View">
     </div>
 </div>
 </div>

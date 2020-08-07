@@ -79,9 +79,16 @@ p + p {
 </style>
 
 <div class="container bot">
-    <div class="area-title">
+    
+<div class="area-title">
         <h1 id="title-article">{{$data->title}}</h1>
     </div>
+    <div class="row">
+        
+        <div class="col">
+        </div>
+        <div class="col-7 textr">
+       
     <div class="descr">
         <p id="descri">{{$data->descricao}}</p>
     </div>
@@ -93,13 +100,6 @@ p + p {
     <div clas="img">
                 <img class="image" src="{{asset('img/'.$data->image)}}"  alt="">
     </div>
-    
-    <div class="row">
-        
-        <div class="col">
-        </div>
-        <div class="col-7 textr">
-
             <p>{{$data->introdution}}</p>            
            
             <p>{{$data->Desenvolvimento}}</p>
@@ -118,7 +118,7 @@ p + p {
             </div> 
         </div>
         <div class="col">
-       
+          <!--@yield('sidebar')-->
         </div>
     </div>
 
@@ -140,7 +140,9 @@ p + p {
             margin: 5px;
         }      
     </style>
+    
 <!--<p>
 <iframe src="{{url('storage/'.$data->file)}}" style="width:1000px;height:600px;"></iframe>
 </p>-->
 @endsection
+
