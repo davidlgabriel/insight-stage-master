@@ -570,7 +570,7 @@
 				<form action="/partners_points" id="code" method="post">
                             <div class="row justify-content-center" style="margin-left:0%;">
                                 <div class="col-auto" style="color:white;">
-                                        <input class="newsletter" name="token" type="text" placeholder="ABC123">
+                                        <input class="newsletter" name="token" type="text" placeholder="example@mail.com">
                                         <input type="submit" value="Submeter" class="subscribe" style="margin-left:0%;margin-top:-3px;">
                                  
                                    
