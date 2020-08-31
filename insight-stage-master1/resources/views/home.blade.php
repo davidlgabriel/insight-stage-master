@@ -526,6 +526,51 @@
     </div>	
     </div>
 
+    <div class="container py-3">
+    <div class="row mx-auto">
+      <div class="col">
+         
+         <h4 class="my-4">Tens alguma sugestão?</h4>
+         <form action="https://netiscte.pt/contacts" method="post">
+            <input type="hidden" name="_token" value="JlX9KgLIxFjRcoCBWbh5kpGxy52SvtcctVLH3Z4p">            <div class="form-group">
+               <input required="" type="text" name="name" class="form-control form-net" id="name" placeholder="Nome completo" value="">
+            </div>
+            <div class="form-group">
+               <input required="" type="email" name="email" class="form-control form-net" id="email" placeholder="Endereço de e-mail" value="">
+            </div>
+            <div class="form-group">
+               <input required="" type="text" name="subject" class="form-control form-net" id="subject" placeholder="Assunto">
+            </div>
+            <div class="form-group">
+               <textarea required="" name="message" class="form-control form-net" id="message" rows="3" placeholder="Mensagem"></textarea>
+            </div>
+            <button type="submit" class="btn btn-yellow">Enviar</button>
+         </form>
+      </div>
+   </div>
+   <div class="col">
+         
+         <h4 class="my-4">Tens alguma sugestão?</h4>
+         <form action="https://netiscte.pt/contacts" method="post">
+            <input type="hidden" name="_token" value="JlX9KgLIxFjRcoCBWbh5kpGxy52SvtcctVLH3Z4p">            <div class="form-group">
+               <input required="" type="text" name="name" class="form-control form-net" id="name" placeholder="Nome completo" value="">
+            </div>
+            <div class="form-group">
+               <input required="" type="email" name="email" class="form-control form-net" id="email" placeholder="Endereço de e-mail" value="">
+            </div>
+            <div class="form-group">
+               <input required="" type="text" name="subject" class="form-control form-net" id="subject" placeholder="Assunto">
+            </div>
+            <div class="form-group">
+               <textarea required="" name="message" class="form-control form-net" id="message" rows="3" placeholder="Mensagem"></textarea>
+            </div>
+            <button type="submit" class="btn btn-yellow">Enviar</button>
+         </form>
+      </div>
+   </div>
+   
+   </div>
+
     
 
 <section>
