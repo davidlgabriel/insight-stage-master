@@ -67,7 +67,7 @@
         <div class="container">
             <div class="row text-light text-center py-4">
                 <div class="col-sm-10 col-md-8 col-lg-6" style="padding:20px;">
-                    <p>Copyright &copy; 2020 Insight Stage - All rights reserved</p>
+                    <p style="font-size:15px;">Copyright &copy; 2020 Insight Stage - All rights reserved</p>
                 </div>
                 <div class="col-md-auto col-sm-12 ml-md-auto text-center">
           <div class="my-3">
