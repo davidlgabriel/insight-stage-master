@@ -65,11 +65,18 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="row text-light text-center py-4 justify-content-center">
-                <div class="col-sm-10 col-md-8 col-lg-6">
+            <div class="row text-light text-center py-4">
+                <div class="col-sm-10 col-md-8 col-lg-6" style="padding:20px;">
                     <p>Copyright &copy; 2020 Insight Stage - All rights reserved</p>
                 </div>
+                <div class="col-md-auto col-sm-12 ml-md-auto text-center">
+          <div class="my-3">
+            <a href="https://www.facebook.com/fista.iscte/" target="_blank"><img class="m-1 social-icon hvr-grow" style="width:20px;" src="{{ asset('img/facebook.svg') }}"></a>
+            <a href="https://www.instagram.com/fista.iscte/" target="_blank"><img class="m-1 social-icon hvr-grow" style="width:20px;" src="{{ asset('img/instagram.svg') }}"></a>
+            <a href="https://www.linkedin.com/company/fista/" target="_blank"> <img class="m-1 social-icon hvr-grow" style="width:20px;" src="{{ asset('img/linkedin.svg') }}"></a>
+          </div>
             </div>
+        </div>
         </div>
     </footer>
     </div>
