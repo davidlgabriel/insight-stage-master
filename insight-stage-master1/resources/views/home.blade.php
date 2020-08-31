@@ -525,12 +525,26 @@
       <!-- column  -->
     </div>	
     </div>
+    </section>
 
-    <div class="container py-3">
-    <div class="row mx-auto">
-      <div class="col">
+    <section >
+    <div class="container py-8 " style="margin-top:60px;">
+    <div class="row">
+            <div class="col-4" style="float:left;">
+            <img src="{{asset('img/lines.png')}}" alt="">
+            </div>
+            <div class="col-4" style="text-align:center; color:black;">
+            <h3>Contact us</h3>
+            </div>
+             <div class="col-4" >
+             <img src="{{asset('img/lines.png')}}" style="float:right;" alt="">
+            </div>
+        </div>        
+    <div class="container py-8 " style="margin-top:60px;">
+    <div class="row">
+      <div class="col-md-7">
          
-         <h4 class="my-4">Tens alguma sugestão?</h4>
+         <h4 class="mx-auto" style="margin-bottom:5%;">Tens alguma sugestão?</h4>
          <form action="https://netiscte.pt/contacts" method="post">
             <input type="hidden" name="_token" value="JlX9KgLIxFjRcoCBWbh5kpGxy52SvtcctVLH3Z4p">            <div class="form-group">
                <input required="" type="text" name="name" class="form-control form-net" id="name" placeholder="Nome completo" value="">
@@ -544,33 +558,88 @@
             <div class="form-group">
                <textarea required="" name="message" class="form-control form-net" id="message" rows="3" placeholder="Mensagem"></textarea>
             </div>
-            <button type="submit" class="btn btn-yellow">Enviar</button>
+            <button type="submit" class="button button4 font-weight-bold">Enviar</button>
          </form>
       </div>
-   </div>
+  
+
    <div class="col">
-         
-         <h4 class="my-4">Tens alguma sugestão?</h4>
-         <form action="https://netiscte.pt/contacts" method="post">
-            <input type="hidden" name="_token" value="JlX9KgLIxFjRcoCBWbh5kpGxy52SvtcctVLH3Z4p">            <div class="form-group">
-               <input required="" type="text" name="name" class="form-control form-net" id="name" placeholder="Nome completo" value="">
-            </div>
-            <div class="form-group">
-               <input required="" type="email" name="email" class="form-control form-net" id="email" placeholder="Endereço de e-mail" value="">
-            </div>
-            <div class="form-group">
-               <input required="" type="text" name="subject" class="form-control form-net" id="subject" placeholder="Assunto">
-            </div>
-            <div class="form-group">
-               <textarea required="" name="message" class="form-control form-net" id="message" rows="3" placeholder="Mensagem"></textarea>
-            </div>
-            <button type="submit" class="btn btn-yellow">Enviar</button>
-         </form>
-      </div>
+	<div class="card shadow" style="color:white;width:26rem;height:16rem;background:#E1A042;border-radius:6px; border:2px;margin-top:13%; ">
+			<div id="token">			
+				<h3 style="font-size:33px;margin-bottom:10%;margin-top:15%;margin-left:20%;margin-right:20%;text-align:center;">Subscribe our newsletter</h3>
+				<form action="/partners_points" id="code" method="post">
+                            <div class="row justify-content-center" style="margin-left:0%;">
+                                <div class="col-auto" style="color:white;">
+                                        <input class="newsletter" name="token" type="text" placeholder="ABC123">
+                                        <input type="submit" value="Submeter" class="subscribe" style="margin-left:0%;margin-top:-3px;">
+                                 
+                                   
+                                </div>
+                            </div>
+                        </form>
+			</div>
+	</div>
+  </div>
+  </div>
+
+
    </div>
    
    </div>
 
+   <style>
+   
+.form-net {
+  border-color:#E1A042;
+  border-radius: 0;
+  border-width: 0.1rem;
+}
+
+.form-net:focus {
+  border-color: #E1A042;
+  box-shadow: 0 0 0 0.1rem rgba(255, 136, 0, 0.6) !important;
+}
+
+.newsletter{
+  text-align: center;
+    padding: 6px 10px;
+    min-width: 177px;
+    border-radius: 2px;
+    display: inline-block;
+    border: solid 2px white;
+    background: transparent;
+    
+    color:white;
+    outline:none;
+
+}
+
+.subscribe{
+    
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: solid 2px white;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0rem;
+    transition: none;
+    border: solid 2px white;
+    color:white;
+    background:transparent;
+  }
+  .subscribe:hover {
+    color:#E1A042 ;
+    border: solid 2px white;
+    background-color: white;
+    outline:none;
+   
+  }
+
+   </style>
     
 
 <section>
