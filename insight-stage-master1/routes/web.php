@@ -28,8 +28,3 @@ Route::get('/article', 'ArticleController@indexadmin');
 Route::get('/article/all/{id}','ArticleController@show');
 Route::get('/article/download/{file}','ArticleController@download');
 Route::get('/about','PageController@about');
-
-
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
-});
