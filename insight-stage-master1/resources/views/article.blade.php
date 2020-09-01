@@ -15,74 +15,7 @@ function sub(obj) {
 }
 </script>
 <style>
-input[type="submit"] {
-    
-}
-label{
-    color:black;
-}
-#yourBtn {
-    font-family: "Open Sans";
-    width: 200px;
-    margin-top: 10px;
-    position: relative;
-    border-radius: 25px;
-    color: black;
-    background-color:white ;
-    border: 1px solid black;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;  
-}
-#yourBtn:hover{
-    font-family: "Open Sans";
-    width: 200px;
-    margin-top: 10px;
-    position: relative;
-    border-radius: 25px;
-    color: white;
-    background-color:#E1A042 ;
-    border:1px solid #E1A042;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;  
 
-}
-
-.form-control{
-    font-size:15px;
-  font-family: "Open Sans";
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border: 1px solid black;
-  text-align: left;
-  background-color: white;
-}
-.form-control:focus {
-   box-shadow:none;
-   border:1px solid #E1A042
-}
-.title{
-    text-align:center;
-}
-.col-4{
-    text-align:center;
-}
-.sub{
-    font-family: "Open Sans";
-    width: 150px;
-    -webkit-border-radius: 10px;
-    color: black;
-    font-weight: bold;
-    -moz-border-radius: 20px;
-    border: 1px Solid black;
-    text-align: center;
-    background-color: white;
-}
 /******
 
 .view{
@@ -99,13 +32,13 @@ label{
     <div class="title" style="border-bottom:1px solid rgb(247, 247, 247);padding-top:30px;">
         <div class="row">
             <div class="col-4" style="float:right;">
-            <img src="{{asset('img/lines.png')}}" alt="">
+            <img id="riscos" src="{{asset('img/lines.png')}}" alt="">
             </div>
             <div class="col-4" style="font-family: 'Open Sans'; color:black;">
             <h3 style="font-weight: bold;">Submit</h3>
             </div>
              <div class="col-4" style="float:left;">
-             <img src="{{asset('img/lines.png')}}" alt="">
+             <img id="riscos" src="{{asset('img/lines.png')}}" alt="">
             </div>
         </div>       
     </div>

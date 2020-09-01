@@ -49,7 +49,7 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item hvr-grow hvr-underline-from-center"><a href="{{ url('/') }}" class="nav-link active">Home</a></li>
                     <li class="nav-item hvr-grow hvr-underline-from-center"><a href="{{ url('/article/') }}" class="nav-link">Works</a></li>
-                    <li class="nav-item hvr-grow hvr-underline-from-center"><a href="" class="nav-link">Teams</a></li>
+                    <li class="nav-item hvr-grow hvr-underline-from-center"><a href="{{ url('/team/') }}" class="nav-link">Teams</a></li>
                     <li class="nav-item hvr-grow hvr-underline-from-center"><a href="" class="nav-link">About Us</a></li>
                     <div class="nav-item hvr-grow hvr-underline-from-center">
                         <button class="button1 button4 font-weight-bold" onclick="location.href='{{ url('/article/submit') }}'">Send us your work</button>

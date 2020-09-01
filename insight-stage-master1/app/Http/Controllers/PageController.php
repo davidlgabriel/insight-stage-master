@@ -42,4 +42,8 @@ class PageController extends Controller
     {
         return view('articlespage');
     }
+    public function team()
+    {
+        return view('team');
+    }
 }

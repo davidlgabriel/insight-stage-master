@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'PageController@index')->name('home');
+Route::get('/team', 'PageController@team')->name('team');
 Route::post('/', 'ArticleController@store');
 Route::get('/', 'ArticleController@indexhome');
 

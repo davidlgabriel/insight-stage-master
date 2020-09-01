@@ -23,6 +23,7 @@
 
 
 </style>
+<!--
 <section id="slider" style="background-image: url('{{ asset('img/')}}'); background-size:repeat;background-repeat:no-repeat;align-items: center;">
 <div class="top-content">
     <div class="container-fluid">
@@ -30,13 +31,13 @@
         <div class="title" style="padding-top:30px; padding-bottom:70px">
         <div class="row">
             <div class="col-4" style="float:left;">
-            <img src="{{asset('img/lines.png')}}" alt="">
+            <img id="riscos" src="{{asset('img/lines.png')}}" alt="">
             </div>
             <div class="col-4" style="text-align:center; color:black;">
             <h3>TRENDING ARTICLES</h3>
             </div>
              <div class="col-4" >
-             <img src="{{asset('img/lines.png')}}" style="float:right;" alt="">
+             <img id="riscos" src="{{asset('img/lines.png')}}" style="float:right;" alt="">
             </div>
         </div>        
     </div>
@@ -312,20 +313,21 @@
 </div>
 
 </section>
+-->
 
 <!--Begin Members-->
 <section id="members" style="background-image: url('{{ asset('img/')}}'); background-size:cover;background-repeat:no-repeat;">
 <div class="container team4" style="margin-right:auto;justify-content:center;margin: auto;">	
 <div class="title" >
-        <div class="row" style="style=padding-top:30px; padding-bottom:30px">
+        <div class="row" style="padding-top:30px; padding-bottom:70px">
             <div class="col-4" style="float:left;">
-            <img src="{{asset('img/lines.png')}}" alt="">
+            <img id="riscos" src="{{asset('img/lines.png')}}" alt="">
             </div>
             <div class="col-4" style="text-align:center; color:black;">
-            <h3>TEAM</h3>
+            <h3>WRITERS</h3>
             </div>
              <div class="col-4" >
-             <img src="{{asset('img/lines.png')}}" style="float:right;" alt="">
+             <img id="riscos" src="{{asset('img/lines.png')}}" style="float:right;" alt="">
             </div>
         
         </div>						
@@ -335,7 +337,7 @@
         <!-- Row -->
         <div class="row" style="justify-content:center;">
           <div class="col-md-12 text-center" >
-            <img src="https://e0.365dm.com/f1/drivers/h_full_809.png" alt="wrapkit" class="img-fluid rounded-circle" style="max-width:200px;padding-right:28px;margin-left:25px;" />
+            <img src="{{asset('img/default.png')}}" alt="wrapkit" class="img-fluid rounded-circle" style="max-width:200px;padding-right:28px;margin-left:25px;" />
           </div>
           <div class="col-md-12 text-center" >
             <div class="pt-2">
@@ -355,7 +357,7 @@
         <!-- Row -->
         <div class="row" style="justify-content:center;">
           <div class="col-md-12 text-center" >
-            <img src="https://www.f1fantasytracker.com/Images/Drivers/Bottas.png" alt="wrapkit" class="img-fluid rounded-circle" style="max-width:200px;padding-right:28px;margin-left:25px;" />
+            <img src="{{asset('img/default.png')}}" alt="wrapkit" class="img-fluid rounded-circle" style="max-width:200px;padding-right:28px;margin-left:25px;" />
           </div>
           <div class="col-md-12 text-center" >
             <div class="pt-2">
@@ -380,7 +382,7 @@
         <!-- Row -->
         <div class="row" style="justify-content:center;">
           <div class="col-md-12 text-center" >
-            <img src="https://e2.365dm.com/f1/drivers/h_full_1489.png" alt="wrapkit" class="img-fluid rounded-circle" style="max-width:200px;padding-right:28px;margin-left:25px;" />
+            <img src="{{asset('img/default.png')}}" alt="wrapkit" class="img-fluid rounded-circle" style="max-width:200px;padding-right:28px;margin-left:25px;" />
           </div>
           <div class="col-md-12 text-center" >
             <div class="pt-2">
@@ -404,7 +406,7 @@
         <!-- Row -->
         <div class="row" style="justify-content:center;">
           <div class="col-md-12 text-center" >
-            <img src="https://e2.365dm.com/f1/drivers/h_full_1465.png" alt="wrapkit" class="img-fluid rounded-circle" style="max-width:200px;padding-right:28px;margin-left:25px;" />
+            <img src="{{asset('img/default.png')}}" alt="wrapkit" class="img-fluid rounded-circle" style="max-width:200px;padding-right:28px;margin-left:25px;" />
           </div>
           <div class="col-md-12 text-center" >
             <div class="pt-2">
@@ -429,7 +431,7 @@
         <!-- Row -->
         <div class="row" style="justify-content:center;">
           <div class="col-md-12 text-center" >
-            <img src="https://e2.365dm.com/f1/drivers/h_full_1501.png" alt="wrapkit" class="img-fluid rounded-circle" style="max-width:200px;padding-right:28px;margin-left:25px;" />
+            <img src="{{asset('img/default.png')}}" alt="wrapkit" class="img-fluid rounded-circle" style="max-width:200px;padding-right:28px;margin-left:25px;" />
           </div>
           <div class="col-md-12 text-center" >
             <div class="pt-2">
@@ -455,7 +457,7 @@
         <!-- Row -->
         <div class="row" style="justify-content:center;">
           <div class="col-md-12 text-center" >
-            <img src="https://e1.365dm.com/f1/drivers/h_full_1475.png" alt="wrapkit" class="img-fluid rounded-circle" style="max-width:200px;padding-right:28px;margin-left:25px;" />
+            <img src="{{asset('img/default.png')}}" alt="wrapkit" class="img-fluid rounded-circle" style="max-width:200px;padding-right:28px;margin-left:25px;" />
           </div>
           <div class="col-md-12 text-center" >
             <div class="pt-2">
@@ -480,7 +482,7 @@
         <!-- Row -->
         <div class="row" style="justify-content:center;">
           <div class="col-md-12 text-center" >
-            <img src="https://e2.365dm.com/f1/drivers/h_full_1471.png" alt="wrapkit" class="img-fluid rounded-circle" style="max-width:200px;padding-right:28px;margin-left:25px;" />
+            <img src="{{asset('img/default.png')}}" alt="wrapkit" class="img-fluid rounded-circle" style="max-width:200px;padding-right:28px;margin-left:25px;" />
           </div>
           <div class="col-md-12 text-center" >
             <div class="pt-2">
@@ -504,7 +506,7 @@
         <!-- Row -->
         <div class="row" style="justify-content:center;">
           <div class="col-md-12 text-center" >
-            <img src="https://e1.365dm.com/f1/drivers/h_full_1504.png" alt="wrapkit" class="img-fluid rounded-circle" style="max-width:200px;padding-right:28px;margin-left:25px;" />
+            <img src="{{asset('img/default.png')}}" alt="wrapkit" class="img-fluid rounded-circle" style="max-width:200px;padding-right:28px;margin-left:25px;" />
           </div>
           <div class="col-md-12 text-center" >
             <div class="pt-2">
@@ -533,13 +535,13 @@
     <div class="container py-8 " style="margin-top:60px;">
     <div class="row">
             <div class="col-4" style="float:left;">
-            <img src="{{asset('img/lines.png')}}" alt="">
+            <img id="riscos"src="{{asset('img/lines.png')}}" alt="">
             </div>
             <div class="col-4" style="text-align:center; color:black;">
-            <h3>Contact us</h3>
+            <h3>CONTACT US</h3>
             </div>
              <div class="col-4" >
-             <img src="{{asset('img/lines.png')}}" style="float:right;" alt="">
+             <img id="riscos" src="{{asset('img/lines.png')}}" style="float:right;" alt="">
             </div>
         </div>        
     <div class="container py-8 " style="margin-top:60px;">
@@ -548,7 +550,8 @@
          
          <h4 class="mx-auto" style="margin-bottom:5%;">Tens alguma sugestão?</h4>
          <form action="https://netiscte.pt/contacts" method="post">
-            <input type="hidden" name="_token" value="JlX9KgLIxFjRcoCBWbh5kpGxy52SvtcctVLH3Z4p">            <div class="form-group">
+            <input type="hidden" name="_token" value="JlX9KgLIxFjRcoCBWbh5kpGxy52SvtcctVLH3Z4p">            
+            <div class="form-group">
                <input required="" type="text" name="name" class="form-control form-net" id="name" placeholder="Nome completo" value="">
             </div>
             <div class="form-group">
@@ -558,24 +561,25 @@
                <input required="" type="text" name="subject" class="form-control form-net" id="subject" placeholder="Assunto">
             </div>
             <div class="form-group">
-               <textarea required="" name="message" class="form-control form-net" id="message" rows="3" placeholder="Mensagem"></textarea>
+               <textarea required="" name="message" class="form-control form-net" id="message" rows="4" placeholder="Mensagem"></textarea>
             </div>
             <button type="submit" class="button button4 font-weight-bold">Enviar</button>
          </form>
       </div>
   
 
-   <div class="col">
-	<div class="card shadow" style="color:white;width:26rem;height:16rem;background:#E1A042;border-radius:6px; border:2px;margin-top:13%; ">
+   <div class="col-md-5">
+	<div class="card shadow" style="color:white;background:#E1A042;border-radius:6px; border:2px;margin-top:13%; ">
 			<div id="token">			
-				<h3 style="font-size:33px;margin-bottom:10%;margin-top:15%;margin-left:20%;margin-right:20%;text-align:center;">Subscribe our newsletter</h3>
-				<form action="/partners_points" id="code" method="post">
+				<h3 id="textt" style="margin-bottom:10%;margin-top:15%;margin-left:20%;margin-right:20%;text-align:center;">Subscribe our newsletter</h3>
+				<form action="" id="code" method="post">
                             <div class="row justify-content-center" style="margin-left:0%;">
                                 <div class="col-auto" style="color:white;">
                                         <input class="newsletter" name="token" type="text" placeholder="example@mail.com">
+                                </div>   
+                                <div>
+                                <div class="col-auto submit" style="color:white;">    
                                         <input type="submit" value="Subscribe" class="subscribe" style="margin-left:0%;margin-top:-3px;">
-                                 
-                                   
                                 </div>
                             </div>
                         </form>
@@ -588,60 +592,6 @@
    </div>
    
    </div>
-
-   <style>
-   
-.form-net {
-  border-color:#E1A042;
-  border-radius: 0;
-  border-width: 0.1rem;
-}
-
-.form-net:focus {
-  border-color: #E1A042;
-  box-shadow: 0 0 0 0.1rem rgba(255, 136, 0, 0.6) !important;
-}
-
-.newsletter{
-  text-align: center;
-    padding: 6px 10px;
-    min-width: 177px;
-    border-radius: 2px;
-    display: inline-block;
-    border: solid 2px white;
-    background: transparent;
-    
-    color:white;
-    outline:none;
-
-}
-
-.subscribe{
-    
-    display: inline-block;
-    font-weight: 400;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    border: solid 2px white;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 0rem;
-    transition: none;
-    border: solid 2px white;
-    color:white;
-    background:transparent;
-  }
-  .subscribe:hover {
-    color:#E1A042 ;
-    border: solid 2px white;
-    background-color: white;
-    outline:none;
-   
-  }
-
-   </style>
     
 
 <section>
