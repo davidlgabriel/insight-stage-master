@@ -549,19 +549,19 @@
       <div class="col-md-7">
          
          <h4 class="mx-auto" style="margin-bottom:5%;">Tens alguma sugestão?</h4>
-         <form action="https://netiscte.pt/contacts" method="post">
-            <input type="hidden" name="_token" value="JlX9KgLIxFjRcoCBWbh5kpGxy52SvtcctVLH3Z4p">            
+         <form action="/contact" method="POST" accept-charset="UTF-8">
+          @csrf
             <div class="form-group">
-               <input required="" type="text" name="name" class="form-control form-net" id="name" placeholder="Nome completo" value="">
+               <input required="" type="text" name="name" class="form-control " id="name" placeholder="Nome completo" value="">
             </div>
             <div class="form-group">
-               <input required="" type="email" name="email" class="form-control form-net" id="email" placeholder="Endereço de e-mail" value="">
+               <input required="" type="email" name="mail" class="form-control " id="mail" placeholder="Endereço de e-mail" >
             </div>
             <div class="form-group">
-               <input required="" type="text" name="subject" class="form-control form-net" id="subject" placeholder="Assunto">
+               <input required="" type="text" name="subject" class="form-control " id="subject" placeholder="Assunto">
             </div>
             <div class="form-group">
-               <textarea required="" name="message" class="form-control form-net" id="message" rows="4" placeholder="Mensagem"></textarea>
+               <textarea required="" name="message" class="form-control " id="message" rows="4" placeholder="Mensagem"></textarea>
             </div>
             <button type="submit" class="button button4 font-weight-bold">Enviar</button>
          </form>
