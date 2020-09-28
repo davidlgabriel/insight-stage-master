@@ -54,4 +54,12 @@ class PageController extends Controller
         
         return redirect('/')->with('sucess', 'Your article was created successfully!');
     }
+
+    public function newsletter(Request $request){
+
+
+        DB::insert('insert into newsletterlist (email) values (?)', [$request->email]);
+        
+        return redirect('/')->with('sucess', 'Your article was created successfully!');
+    }
 }

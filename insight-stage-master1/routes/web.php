@@ -31,6 +31,7 @@ Route::get('/article/download/{file}','ArticleController@download');
 Route::get('/about','PageController@about');
 
 Route::post('/contact','PageController@contact');
+Route::post('/subscription','PageController@newsletter');
 
 
 Route::group(['prefix' => 'admin'], function () {
