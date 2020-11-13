@@ -572,10 +572,12 @@
 	<div class="card shadow" style="color:white;background:#E1A042;border-radius:6px; border:2px;margin-top:13%; ">
 			<div id="token">			
 				<h3 id="textt" style="margin-bottom:10%;margin-top:15%;margin-left:20%;margin-right:20%;text-align:center;">Subscribe our newsletter</h3>
-				<form action="" id="code" method="post">
+			
+<form action="/subscription" id="code" method="POST">
+          @csrf
                             <div class="row justify-content-center" style="margin-left:0%;">
                                 <div class="col-auto" style="color:white;">
-                                        <input class="newsletter" name="token" type="text" placeholder="example@mail.com">
+                                        <input class="newsletter" name="email" type="email" placeholder="example@mail.com">
                                 </div>   
                                 <div>
                                 <div class="col-auto submit" style="color:white;">    
@@ -583,6 +585,7 @@
                                 </div>
                             </div>
                         </form>
+
 			</div>
 	</div>
   </div>
