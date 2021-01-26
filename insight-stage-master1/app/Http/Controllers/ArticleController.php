@@ -19,7 +19,7 @@ class ArticleController extends Controller
     public function indexadmin()
     {
         $file=Article::all();
-        $flipbooks = DB::table('flipbook')->where('status', '1')->get();
+        $flipbooks = DB::table('flipbook')->where('status', '1')->orderByDesc('id')->get();
         return view('allarticle', compact('file', 'flipbooks'));
     }
     public function indexhome()

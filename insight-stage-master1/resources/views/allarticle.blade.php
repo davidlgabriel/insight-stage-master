@@ -31,8 +31,8 @@
 
 </style>
         <div class="row justify-content-center" style="padding-top: 20px;padding-bottom: 20px">
-
             @foreach($flipbooks as $fb)
+
                 <div class="row" style="text-align:center; padding-top: 20px">
 
                     <a href="{{ route('flipbook.show',$fb->id) }}" style="float: left;clear: both;color: #ba8b00;">
