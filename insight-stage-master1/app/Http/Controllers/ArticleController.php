@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Article;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Redirector;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 
 class ArticleController extends Controller
@@ -18,7 +19,8 @@ class ArticleController extends Controller
     public function indexadmin()
     {
         $file=Article::all();
-        return view('allarticle', compact('file'));
+        $flipbooks = DB::table('flipbook')->where('status', '1')->get();
+        return view('allarticle', compact('file', 'flipbooks'));
     }
     public function indexhome()
     {
@@ -65,7 +67,7 @@ class ArticleController extends Controller
             $file=$request->file('file');
             $filename=time().'.'.$file->getClientOriginalExtension();
             $request->file->move('storage/',$filename);
-            
+
             $data->file= $filename;
         }
         $data->title="";
@@ -85,7 +87,7 @@ class ArticleController extends Controller
         }
 
         return redirect('/article/submit')->with('sucess', 'Your article was created successfully!');
-        
+
     }
 
 

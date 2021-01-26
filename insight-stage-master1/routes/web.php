@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::resource('/flipbook','FlipBookController');
 Route::get('/', 'PageController@index')->name('home');
 Route::get('/team', 'PageController@team')->name('team');
 Route::post('/', 'ArticleController@store');

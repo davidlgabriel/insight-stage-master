@@ -30,17 +30,31 @@
 }
 
 </style>
-    <div class="container topp">
-        <div class="row">
-        
-        
-    
+        <div class="row justify-content-center" style="padding-top: 20px;padding-bottom: 20px">
+
+            @foreach($flipbooks as $fb)
+                <div class="row" style="text-align:center; padding-top: 20px">
+
+                    <a href="{{ route('flipbook.show',$fb->id) }}" style="float: left;clear: both;color: #ba8b00;">
+
+                        <h4>{{ $fb->name }}</h4>
+
+                        <img class=" img-thumbnail" style="max-width: 30%; height: auto"
+                             src="{{ asset(explode(",",$fb->content)[0])  }}" data-holder-rendered="true">
+
+                    </a>
+
+
+                </div>
+            @endforeach
+
+
     @foreach($file as $key=>$data)
     @if($data->verif == '1')
-    
+
     <div class col-3 m>
 
-    
+
     <div class="card" style="width:280px">
                     <a href="#">
 			                <span class="badge badge-warning">{{$data->theme}}</span>
@@ -58,7 +72,7 @@
                                       <span id="date" >12|08|20</span>
                                 </div>
                             </div>
-                                
+
                             </div>
                             </div>
     </div>
@@ -66,7 +80,6 @@
     @endif
     @endforeach
     </div>
-    
-    </div>
+
 
 @endsection
