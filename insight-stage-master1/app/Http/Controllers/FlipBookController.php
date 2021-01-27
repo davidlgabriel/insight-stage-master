@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-
-
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Vendor\Spatie\PdfToImage\Pdf;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
@@ -60,31 +59,19 @@ class FlipBookController extends Controller
         $content = "";
         $i = 1;
         foreach($request->files as $uploadedFile )
-        //if($request->hasFile('flip_img'))
         {
-            // echo "hi";
-            // $request->file()
-            // $name = $uploadedFile->getClientOriginalName();
-            // $image =  $request->file('flip_img');
+
             $filename  = time().'_'. $i . '.' . $uploadedFile->getClientOriginalExtension();
             $i++;
             $file = $uploadedFile->move(public_path('rudra/fbook/pics/'), $filename);
-           //$path = public_path('rudra/flipbook/pics/' . $filename);
             $path = 'rudra/fbook/pics/' . $filename;
-
-           // Image::make($image->getRealPath())->resize(200, 200)->save($path);
             $content .= $path .",";
-
         }
 
         $input['content'] = rtrim($content,",");
         $input['status'] = 1;
         $input['name'] = $input['book_name'];
-       // $input['urlname'] = strtolower(preg_replace('/[ ,]+/', '-', trim($input['name'])));
         Flipbook::create($input);
-        //dd($input);
-        //exit;
-       // Subcategory::create($input);
         return Redirect::route('flipbook.index');
     }
 
