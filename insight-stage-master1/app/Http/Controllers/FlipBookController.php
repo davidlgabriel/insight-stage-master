@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use Carbon\Carbon;
 use Illuminate\Http\Request;
-use Vendor\Spatie\PdfToImage\Pdf;
+use Imagick;
+use Spatie\PdfToImage\Pdf;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
@@ -22,13 +23,13 @@ class FlipBookController extends Controller
     public function index()
     {
         //
-       // echo Carbon::now($timezone)->toDateTimeString();
-       // $current_time = ($timezone) ? Carbon::now(str_replace('-', '/', $timezone)) : Carbon::now();
+        // echo Carbon::now($timezone)->toDateTimeString();
+        // $current_time = ($timezone) ? Carbon::now(str_replace('-', '/', $timezone)) : Carbon::now();
         //echo $time->toDateTimeString();
-      // return view('flipbook::time', compact('current_time'));
+        // return view('flipbook::time', compact('current_time'));
         $flipbooks = DB::table('flipbook')->where('status', '1')->get();
 
-        return view('flipbook::bookindex',compact('flipbooks'));
+        return view('flipbook::bookindex', compact('flipbooks'));
     }
 
     /**
@@ -44,31 +45,35 @@ class FlipBookController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
-
         $input = $request->all();
-        #error_log(implode("|", $input));
-
-
-        // return dd($input);
 
         $content = "";
         $i = 1;
-        foreach($request->files as $uploadedFile )
-        {
-
-            $filename  = time().'_'. $i . '.' . $uploadedFile->getClientOriginalExtension();
+        foreach ($request->files as $uploadedFile) {
+            /* //codigo para quando o GS estiver funcional
+             $pdf = new Pdf($uploadedFile);
+            foreach (range(1, $pdf->getNumberOfPages()) as $pageNumber) {
+                $filename  = time().'_'. $i . '.' . $uploadedFile->getClientOriginalExtension();
+                $i++;
+                //$file = $uploadedFile->move(public_path('rudra/fbook/pics/'), $filename);
+                $path = 'rudra/fbook/pics/' . $filename;
+                $pdf->setPage($pageNumber)
+                    ->saveImage($path);
+            }
+             */
+            $filename = time() . '_' . $i . '.' . $uploadedFile->getClientOriginalExtension();
             $i++;
             $file = $uploadedFile->move(public_path('rudra/fbook/pics/'), $filename);
             $path = 'rudra/fbook/pics/' . $filename;
-            $content .= $path .",";
+            $content .= $path . ",";
         }
 
-        $input['content'] = rtrim($content,",");
+        $input['content'] = rtrim($content, ",");
         $input['status'] = 1;
         $input['name'] = $input['book_name'];
         Flipbook::create($input);
@@ -78,35 +83,35 @@ class FlipBookController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
     {
         $flipbook = DB::table('flipbook')->where('id', $id)->get()[0];
-       //dd($flipbook);
-        $content = explode(",",$flipbook->content);
-        return view('flipbook::showbook',compact('flipbook','content'));
+        //dd($flipbook);
+        $content = explode(",", $flipbook->content);
+        return view('flipbook::showbook', compact('flipbook', 'content'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
     {
         $flipbook = DB::table('flipbook')->where('id', $id)->get()[0];
-        $content = explode(",",$flipbook->content);
-        return view('flipbook::editbook',compact('flipbook','content'));
+        $content = explode(",", $flipbook->content);
+        return view('flipbook::editbook', compact('flipbook', 'content'));
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param \Illuminate\Http\Request $request
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -117,26 +122,26 @@ class FlipBookController extends Controller
 
         $fb->content .= ",";
         $i = 1;
-        foreach($request->files as $uploadedFile )
-            //if($request->hasFile('flip_img'))
+        foreach ($request->files as $uploadedFile) //if($request->hasFile('flip_img'))
         {
             // echo "hi";
             // $request->file()
             // $name = $uploadedFile->getClientOriginalName();
-
-            //$image =  $request->file('flip_img');
-            $filename  = time().'_'. $i . '.' . $uploadedFile->getClientOriginalExtension();
+            $filename = time() . '_' . $i . '.' . $uploadedFile->getClientOriginalExtension();
             $i++;
             $file = $uploadedFile->move(public_path('rudra/fbook/pics/'), $filename);
             //$path = public_path('rudra/flipbook/pics/' . $filename);
             $path = 'rudra/fbook/pics/' . $filename;
 
+            //$image =  $request->file('flip_img');
+
+
             // Image::make($image->getRealPath())->resize(200, 200)->save($path);
-            $fb->content .= $path .",";
+            $fb->content .= $path . ",";
 
         }
 
-        $fb->content = rtrim($fb->content,",");
+        $fb->content = rtrim($fb->content, ",");
 
         $fb->name = $input['book_name'];
         $fb->desc = $input['desc'];
@@ -151,19 +156,18 @@ class FlipBookController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
         $fb = Flipbook::find($id);
-        $imgArr = explode(",",$fb->content);
-        foreach($imgArr as $img)
-        {
+        $imgArr = explode(",", $fb->content);
+        foreach ($imgArr as $img) {
             $image = public_path($img);
-        if (file_exists($image)) {
-            unlink($image);
-        }
+            if (file_exists($image)) {
+                unlink($image);
+            }
         }
         $fb->delete();
         return Redirect::route('flipbook.index');
