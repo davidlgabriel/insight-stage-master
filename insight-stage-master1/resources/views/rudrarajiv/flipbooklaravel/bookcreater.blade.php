@@ -42,6 +42,7 @@
                 <input class="input-block-level" type="text" placeholder="* Flip Book Name" name="book_name" value="">
             </div>
         </div>
+
         <div class="row">
             <div class="col-lg-3">
                 <label><span class="required">*</span> Book Description</label></div>

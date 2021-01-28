@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "392bd6aded738c9c51307ac196e71c96",
+    "content-hash": "dbe5a063e1fa6cfba2a0cd2ba64782a6",
     "packages": [
         {
             "name": "arrilot/laravel-widgets",
@@ -1430,7 +1430,6 @@
                 "sebastian/comparator": ">=1.2.3",
                 "symfony/finder": "^4.1"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -2820,6 +2819,71 @@
             "time": "2020-11-07T02:01:34+00:00"
         },
         {
+            "name": "orbitale/imagemagick-php",
+            "version": "v3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Orbitale/ImageMagickPHP.git",
+                "reference": "38bc77521ac6e87b558a16cf5a0a441ee234462a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Orbitale/ImageMagickPHP/zipball/38bc77521ac6e87b558a16cf5a0a441ee234462a",
+                "reference": "38bc77521ac6e87b558a16cf5a0a441ee234462a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": "^7.2|^8.0",
+                "symfony/process": "^4.0|^5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.5|^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Orbitale\\Component\\ImageMagick\\": "src/",
+                    "Orbitale\\Component\\ImageMagick\\Tests\\": "Tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Rock Ancelet",
+                    "email": "alex@orbitale.io",
+                    "homepage": "http://www.orbitale.io/"
+                }
+            ],
+            "description": "A system that allows creating commands to send to the exec() function to use ImageMagick's powerful features.",
+            "homepage": "https://github.com/Orbitale/ImageMagickPHP",
+            "keywords": [
+                "ImageMagick",
+                "converter",
+                "gd",
+                "image",
+                "imagick"
+            ],
+            "funding": [
+                {
+                    "url": "https://github.com/pierstoval",
+                    "type": "github"
+                },
+                {
+                    "url": "https://issuehunt.io/r/pierstoval",
+                    "type": "issuehunt"
+                },
+                {
+                    "url": "https://www.patreon.com/pierstoval",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2021-01-13T10:35:08+00:00"
+        },
+        {
             "name": "org_heigl/ghostscript",
             "version": "2.3.2",
             "source": {
@@ -3543,7 +3607,6 @@
             "require": {
                 "php": ">=5.4.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -8575,5 +8638,5 @@
         "php": "^7.2.5"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "1.1.0"
 }

@@ -121,6 +121,7 @@
       <path value="$PROJECT_DIR$/vendor/spatie/pdf-to-image" />
       <path value="$PROJECT_DIR$/vendor/calcinai/php-imagick" />
       <path value="$PROJECT_DIR$/vendor/gravitymedia/ghostscript" />
+      <path value="$PROJECT_DIR$/vendor/orbitale/imagemagick-php" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2">

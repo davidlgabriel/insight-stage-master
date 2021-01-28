@@ -124,6 +124,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/spatie/pdf-to-image" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/calcinai/php-imagick" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/gravitymedia/ghostscript" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/orbitale/imagemagick-php" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

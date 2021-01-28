@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Org_Heigl\Ghostscript\Ghostscript;
+use Imagick;
 use Spatie\PdfToImage\Exceptions\InvalidFormat;
 use Spatie\PdfToImage\Exceptions\PdfDoesNotExist;
 use Spatie\PdfToImage\Exceptions\PageDoesNotExist;
@@ -15,16 +16,22 @@ class Pdf
     /** @var string */
     protected $outputFormat = '';
 
+    public $imagick;
+
     /** @var int */
     protected $page = 1;
 
+    protected $numberOfPages;
+
     protected $validOutputFormats = ['jpg', 'jpeg', 'png'];
 
-    public function __construct(string $pdfFile)
+    public function __construct(string $pdfFile, int $np)
     {
         if (! filter_var($pdfFile, FILTER_VALIDATE_URL) && ! file_exists($pdfFile)) {
             throw new PdfDoesNotExist();
         }
+
+        $this->numberOfPages = $np;
 
         $this->ghostscript = (new Ghostscript())
             ->setInputFile($pdfFile)
@@ -62,7 +69,7 @@ class Pdf
 
     public function getNumberOfPages(): int
     {
-        return 1;
+        return $this->numberOfPages;
     }
 
     public function getGhostscript(): Ghostscript

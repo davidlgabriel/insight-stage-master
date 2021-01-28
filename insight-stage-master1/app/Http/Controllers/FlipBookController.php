@@ -6,6 +6,7 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Imagick;
 use Spatie\PdfToImage\Pdf;
+use Org_Heigl\Ghostscript\Ghostscript;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
@@ -47,30 +48,35 @@ class FlipBookController extends Controller
      *
      * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
+     * @throws \Spatie\PdfToImage\Exceptions\PdfDoesNotExist
      */
     public function store(Request $request)
     {
+        Ghostscript::setGsPath("C:\Program Files\gs\gs9.53.3\bin\gswin64c.exe");
         $input = $request->all();
 
         $content = "";
         $i = 1;
         foreach ($request->files as $uploadedFile) {
-            /* //codigo para quando o GS estiver funcional
-             $pdf = new Pdf($uploadedFile);
-            foreach (range(1, $pdf->getNumberOfPages()) as $pageNumber) {
-                $filename  = time().'_'. $i . '.' . $uploadedFile->getClientOriginalExtension();
+            //codigo para quando o GS estiver funcional
+            $pdf = new Pdf($uploadedFile, (int) $input['np']);
+            foreach (range(1, (int) $input['np']) as $pageNumber) {
+                $filename = time() . '_' . $i . '.' . 'png';
                 $i++;
                 //$file = $uploadedFile->move(public_path('rudra/fbook/pics/'), $filename);
                 $path = 'rudra/fbook/pics/' . $filename;
                 $pdf->setPage($pageNumber)
-                    ->saveImage($path);
+                    ->saveImage(public_path($path));
+                $content .= $path . ",";
             }
-             */
+            /*
             $filename = time() . '_' . $i . '.' . $uploadedFile->getClientOriginalExtension();
             $i++;
             $file = $uploadedFile->move(public_path('rudra/fbook/pics/'), $filename);
             $path = 'rudra/fbook/pics/' . $filename;
             $content .= $path . ",";
+             */
+
         }
 
         $input['content'] = rtrim($content, ",");
