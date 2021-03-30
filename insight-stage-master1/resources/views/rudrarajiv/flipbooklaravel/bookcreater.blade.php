@@ -50,6 +50,7 @@
                                          name="desc" value=""></div>
         </div>
 
+
         <div id="browse_file">
             <div class="row">
                 <div class="col-lg-3"><label><span class="required">*</span> Select Flipbook Image </label></div>

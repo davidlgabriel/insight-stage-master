@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Imagick;
+use Ramsey\Uuid\Type\Integer;
 use Spatie\PdfToImage\Pdf;
 use Org_Heigl\Ghostscript\Ghostscript;
 
